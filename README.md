@@ -23,7 +23,7 @@
 yarn add @nuxtjs/partytown # or npm install @nuxtjs/partytown
 ```
 
-2. Add `@nuxtjs/partytown` to the `buildModules` section of `nuxt.config.js`
+2. Add `@nuxtjs/partytown` to the `modules` section of `nuxt.config.js`
 
 3. Add `type: 'text/partytown'` attribute to any scripts you want to be handled by partytown.
 
