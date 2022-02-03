@@ -23,19 +23,75 @@
 yarn add @nuxtjs/partytown # or npm install @nuxtjs/partytown
 ```
 
-2. Add `@nuxtjs/partytown` to the `modules` section of `nuxt.config.js`
+2. Add `@nuxtjs/partytown` to the `modules` section of `nuxt.config.ts`
 
 3. Add `type: 'text/partytown'` attribute to any scripts you want to be handled by partytown.
 
 ```js
 import { defineNuxtConfig } from 'nuxt3'
+
 export default defineNuxtConfig({
   meta: {
     script: [{ src: '/test-script.js', type: 'text/partytown' }],
   },
   modules: ['@nuxtjs/partytown'],
+})
+```
+
+## Configuration
+
+Partytown supports a number of options, which you can pass in your `nuxt.config.ts` file:
+
+```js
+import { defineNuxtConfig } from 'nuxt3'
+
+export default defineNuxtConfig({
+  // ...
   partytown: {
-    // module options
+    /**
+     * When `true`, Partytown scripts are not minified. See the
+     * [Debugging docs](https://github.com/BuilderIO/partytown/wiki/Debugging) on how to enable more logging.
+     *
+     * @default true in development
+     */
+    debug: boolean
+    /** Log method calls */
+    logCalls?: boolean
+    /** Log getter calls */
+    logGetters?: boolean
+    /** Log setter calls */
+    logSetters?: boolean
+    /** Log Image() src requests */
+    logImageRequests?: boolean
+    /** Log script executions */
+    logScriptExecution?: boolean
+    /** Log navigator.sendBeacon() requests */
+    logSendBeaconRequests?: boolean
+    /** Log stack traces */
+    logStackTraces?: boolean
+    /**
+     * An array of strings representing function calls on the main thread to forward to the web worker. See
+     * [Forwarding Events and Triggers](https://github.com/BuilderIO/partytown/wiki/Forwarding-Events-and-Triggers)
+     * for more info.
+     *
+     * @default []
+     */
+    forward: string[]
+    /**
+     * Path where the Partytown library can be found your server. Note that the path must both start
+     * and end with a `/` character, and the files must be hosted from the same origin as the webpage.
+     *
+     * @default '/~partytown/'
+     */
+    lib: string
+    /**
+     * Hook that is called to resolve URLs which can be used to modify URLs. The hook uses the API:
+     * `resolveUrl(url: URL, location: URL, method: string)`. See
+     * [Proxying Requests](https://github.com/BuilderIO/partytown/wiki/Proxying-Requests) for more information.
+     *
+     * This should be provided as a string, which will be inlined into a `<script>` tag.
+     */
+    resolveUrl?: string
   },
 })
 ```
