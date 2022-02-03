@@ -56,6 +56,9 @@ export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@nuxtjs/partytown',
     configKey: 'partytown',
+    compatibility: {
+      bridge: true,
+    },
   },
   defaults: nuxt => ({
     debug: nuxt.options.dev,
@@ -63,8 +66,6 @@ export default defineNuxtModule<ModuleOptions>({
     lib: '/~partytown/',
   }),
   async setup(options, nuxt) {
-    assertNuxtCompatibility({ bridge: true })
-
     // Normalize partytown configuration
     const rawConfig: Record<string, any> = {
       debug: options.debug,
