@@ -1,3 +1,5 @@
+### [1.0.2](https://github.com/nuxt-community/partytown-module/compare/1.0.1...1.0.2) (2022-02-03)
+
 ### 1.0.1 (2022-02-03)
 
 
