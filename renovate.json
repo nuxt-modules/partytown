@@ -3,7 +3,6 @@
     "config:base",
     "packages:linters",
     ":labels(dependencies,devops)",
-    ":pinAllExceptPeerDependencies",
     ":maintainLockFilesWeekly",
     ":enableVulnerabilityAlerts",
     ":automergeLinters",

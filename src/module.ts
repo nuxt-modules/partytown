@@ -2,8 +2,12 @@ import { join } from 'path'
 import { promises as fsp } from 'fs'
 import { genArrayFromRaw, genObjectFromRaw, genString } from 'knitwork'
 import serveStatic from 'serve-static'
-import { defineNuxtModule, assertNuxtCompatibility, isNuxt2 } from '@nuxt/kit'
-import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
+import jiti from 'jiti'
+import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
+// TODO: remove when https://github.com/BuilderIO/partytown/pull/63 is merged
+const { copyLibFiles, libDirPath } = jiti(null)(
+  '@builder.io/partytown/utils'
+) as typeof import('@builder.io/partytown/utils')
 
 export interface ModuleOptions {
   /**
