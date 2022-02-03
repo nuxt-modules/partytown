@@ -1,5 +1,28 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "packages:linters",
+    ":labels(dependencies,devops)",
+    ":pinAllExceptPeerDependencies",
+    ":maintainLockFilesWeekly",
+    ":enableVulnerabilityAlerts",
+    ":automergeLinters",
+    ":automergeTypes",
+    ":semanticCommitTypeAll(chore)",
+    ":automergePatch"
+  ],
+  "rebaseStalePrs": true,
+  "prCreation": "not-pending",
+  "rangeStrategy": "bump",
+  "assignees": ["danielroe"],
+  "npm": {
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+  },
+  "packageRules": [
+    {
+      "packagePatterns": ["lint"],
+      "groupName": "all lint dependencies",
+      "groupSlug": "all-lint"
+    }
   ]
 }
