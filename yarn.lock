@@ -282,7 +282,7 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@builder.io/partytown@^0.2.4":
+"@builder.io/partytown@0.2.4":
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.2.4.tgz#93751bc5b5f47da4514b84fe5bc9b81b98ba6f9a"
   integrity sha512-v7STRrBiy9O4gawqBV5daaLBipbz8juvfA+V5GohjktC0sjb9c//lB5gvTc2qXCoBqTmPu7Ap+B0ZbwIErtmXQ==
@@ -775,7 +775,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/serve-static@^1.13.10":
+"@types/serve-static@1.13.10":
   version "1.13.10"
   resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.13.10.tgz#f5e0ce8797d2d7cc5ebeda48a52c96c4fa47a8d9"
   integrity sha512-nCkHGI4w7ZgAdNkrEu0bv+4xNV/XDqW+DydknebMOQwkpDGx8G+HTlj7R7ABI8i8nKxVw0wtKPi1D+lPOkh4YQ==
@@ -3825,7 +3825,7 @@ klona@^2.0.5:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==
 
-knitwork@^0.1.0:
+knitwork@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/knitwork/-/knitwork-0.1.0.tgz#9495fde93d2390bcfa7439292fe8a44447f7fc67"
   integrity sha512-veAmNJu4Niku+zjm2//+xLGsYTwB8OP1jBHjPU5RbQu9Jl263d5PtbM0OaITlYvhLFLov/R12hs0GL4ujzMY3A==
@@ -4994,7 +4994,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier@^2.5.1:
+prettier@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
   integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
@@ -5417,7 +5417,7 @@ serve-placeholder@^1.2.4:
   dependencies:
     defu "^5.0.0"
 
-serve-static@^1.14.2:
+serve-static@1.14.2, serve-static@^1.14.2:
   version "1.14.2"
   resolved "https://registry.yarnpkg.com/serve-static/-/serve-static-1.14.2.tgz#722d6294b1d62626d41b43a013ece4598d292bfa"
   integrity sha512-+TMNA9AFxUEGuC0z2mevogSnn9MXKb4fa7ngeRMJaaGv8vTwnIEkKi+QGvPt33HSnf8pRS+WGM0EbMtCJLKMBQ==
