@@ -1,11 +1,19 @@
 import { join } from 'path'
 import { promises as fsp } from 'fs'
-import { genArrayFromRaw, genObjectFromRaw, genString } from 'knitwork'
+import { genObjectFromRawEntries } from 'knitwork'
 import serveStatic from 'serve-static'
 import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
+import type { PartytownConfig } from '@builder.io/partytown/integration'
 import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
 
-export interface ModuleOptions {
+type ExcludeFrom<G extends Record<string, any>, K> = Pick<
+  G,
+  {
+    [P in keyof G]: NonNullable<G[P]> extends K ? never : P
+  }[keyof G]
+>
+
+export interface ModuleOptions extends ExcludeFrom<PartytownConfig, Function> {
   /**
    * When `true`, Partytown scripts are not minified. See the
    * [Debugging docs](https://partytown.builder.io/debugging) on how to enable more logging.
@@ -13,28 +21,6 @@ export interface ModuleOptions {
    * @default true in development
    */
   debug: boolean
-  /** Log method calls */
-  logCalls?: boolean
-  /** Log getter calls */
-  logGetters?: boolean
-  /** Log setter calls */
-  logSetters?: boolean
-  /** Log Image() src requests */
-  logImageRequests?: boolean
-  /** Log script executions */
-  logScriptExecution?: boolean
-  /** Log navigator.sendBeacon() requests */
-  logSendBeaconRequests?: boolean
-  /** Log stack traces */
-  logStackTraces?: boolean
-  /**
-   * An array of strings representing function calls on the main thread to forward to the web worker. See
-   * [Forwarding Events and Triggers](https://partytown.builder.io/forwarding-events)
-   * for more info.
-   *
-   * @default []
-   */
-  forward: string[]
   /**
    * Path where the Partytown library can be found your server. Note that the path must both start
    * and end with a `/` character, and the files must be hosted from the same origin as the webpage.
@@ -50,6 +36,9 @@ export interface ModuleOptions {
    * This should be provided as a string, which will be inlined into a `<script>` tag.
    */
   resolveUrl?: string
+  get?: string
+  set?: string
+  apply?: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -67,15 +56,11 @@ export default defineNuxtModule<ModuleOptions>({
   }),
   async setup(options, nuxt) {
     // Normalize partytown configuration
-    const rawConfig: Record<string, any> = {
-      debug: options.debug,
-      lib: genString(options.lib),
-      forward: genArrayFromRaw(options.forward),
-    }
-    if (options.resolveUrl) {
-      rawConfig.resolveUrl = options.resolveUrl
-    }
-    const renderedConfig = genObjectFromRaw(rawConfig).replace(/\s*\n\s*/g, ' ')
+    const fns = ['resolveUrl', 'get', 'set', 'apply']
+    const rawConfig = Object.entries(options).map(
+      ([key, value]) => [key, fns.includes(key) ? value : JSON.stringify(value)] as [string, string]
+    )
+    const renderedConfig = genObjectFromRawEntries(rawConfig).replace(/\s*\n\s*/g, ' ')
 
     // Add partytown snippets to document head
     const partytownSnippet = await fsp.readFile(join(libDirPath(), 'partytown.js'), 'utf-8')
