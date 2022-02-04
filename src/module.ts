@@ -2,17 +2,13 @@ import { join } from 'path'
 import { promises as fsp } from 'fs'
 import { genArrayFromRaw, genObjectFromRaw, genString } from 'knitwork'
 import serveStatic from 'serve-static'
-import jiti from 'jiti'
 import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
-// TODO: remove when https://github.com/BuilderIO/partytown/pull/63 is merged
-const { copyLibFiles, libDirPath } = jiti(null)(
-  '@builder.io/partytown/utils'
-) as typeof import('@builder.io/partytown/utils')
+import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
 
 export interface ModuleOptions {
   /**
    * When `true`, Partytown scripts are not minified. See the
-   * [Debugging docs](https://github.com/BuilderIO/partytown/wiki/Debugging) on how to enable more logging.
+   * [Debugging docs](https://partytown.builder.io/debugging) on how to enable more logging.
    *
    * @default true in development
    */
@@ -33,7 +29,7 @@ export interface ModuleOptions {
   logStackTraces?: boolean
   /**
    * An array of strings representing function calls on the main thread to forward to the web worker. See
-   * [Forwarding Events and Triggers](https://github.com/BuilderIO/partytown/wiki/Forwarding-Events-and-Triggers)
+   * [Forwarding Events and Triggers](https://partytown.builder.io/forwarding-events)
    * for more info.
    *
    * @default []
@@ -49,7 +45,7 @@ export interface ModuleOptions {
   /**
    * Hook that is called to resolve URLs which can be used to modify URLs. The hook uses the API:
    * `resolveUrl(url: URL, location: URL, method: string)`. See
-   * [Proxying Requests](https://github.com/BuilderIO/partytown/wiki/Proxying-Requests) for more information.
+   * [Proxying Requests](https://partytown.builder.io/proxying-requests) for more information.
    *
    * This should be provided as a string, which will be inlined into a `<script>` tag.
    */
@@ -112,14 +108,7 @@ export default defineNuxtModule<ModuleOptions>({
     } else {
       // Copy partytown directory into .output/public in production build
       nuxt.hook('nitro:generate', async ctx => {
-        await copyLibFiles(join(ctx.output.publicDir, options.lib))
-        // Remove debugging JS from production build
-        if (!options.debug) {
-          await fsp.rm(join(ctx.output.publicDir, options.lib, 'debug'), {
-            recursive: true,
-            force: true,
-          })
-        }
+        await copyLibFiles(join(ctx.output.publicDir, options.lib), { debugDir: options.debug })
       })
     }
   },
