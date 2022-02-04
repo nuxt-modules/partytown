@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> [Partytown](https://github.com/BuilderIO/partytown/wiki) integration for [Nuxt](https://v3.nuxtjs.org)
+> [Partytown](https://partytown.builder.io) integration for [Nuxt](https://v3.nuxtjs.org)
 
 ## Features
 
@@ -49,49 +49,19 @@ export default defineNuxtConfig({
   // ...
   partytown: {
     /**
-     * When `true`, Partytown scripts are not minified. See the
-     * [Debugging docs](https://github.com/BuilderIO/partytown/wiki/Debugging) on how to enable more logging.
+     * When `true`, Partytown scripts are not minified. See https://partytown.builder.io/configuration
+     * on how to enable more logging.
      *
      * @default true in development
      */
     debug: boolean
-    /** Log method calls */
-    logCalls?: boolean
-    /** Log getter calls */
-    logGetters?: boolean
-    /** Log setter calls */
-    logSetters?: boolean
-    /** Log Image() src requests */
-    logImageRequests?: boolean
-    /** Log script executions */
-    logScriptExecution?: boolean
-    /** Log navigator.sendBeacon() requests */
-    logSendBeaconRequests?: boolean
-    /** Log stack traces */
-    logStackTraces?: boolean
     /**
-     * An array of strings representing function calls on the main thread to forward to the web worker. See
-     * [Forwarding Events and Triggers](https://github.com/BuilderIO/partytown/wiki/Forwarding-Events-and-Triggers)
-     * for more info.
+     * Path (relative to your base URL) where the Partytown library should be served from.
      *
-     * @default []
-     */
-    forward: string[]
-    /**
-     * Path where the Partytown library can be found your server. Note that the path must both start
-     * and end with a `/` character, and the files must be hosted from the same origin as the webpage.
-     *
-     * @default '/~partytown/'
+     * @default '~partytown'
      */
     lib: string
-    /**
-     * Hook that is called to resolve URLs which can be used to modify URLs. The hook uses the API:
-     * `resolveUrl(url: URL, location: URL, method: string)`. See
-     * [Proxying Requests](https://github.com/BuilderIO/partytown/wiki/Proxying-Requests) for more information.
-     *
-     * This should be provided as a string, which will be inlined into a `<script>` tag.
-     */
-    resolveUrl?: string
+    // For other options, see https://partytown.builder.io/configuration
   },
 })
 ```

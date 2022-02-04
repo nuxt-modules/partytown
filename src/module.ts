@@ -14,6 +14,7 @@ type ExcludeFrom<G extends Record<string, any>, K> = Pick<
   }[keyof G]
 >
 
+/** For more information read the full details at https://partytown.builder.io/configuration */
 export interface ModuleOptions extends ExcludeFrom<PartytownConfig, Function> {
   /**
    * When `true`, Partytown scripts are not minified. See the
@@ -36,8 +37,11 @@ export interface ModuleOptions extends ExcludeFrom<PartytownConfig, Function> {
    * This should be provided as a string, which will be inlined into a `<script>` tag.
    */
   resolveUrl?: string
+  /** This function should be provided as a string, which will be inlined into the partytown config */
   get?: string
+  /** This function should be provided as a string, which will be inlined into the partytown config */
   set?: string
+  /** This function should be provided as a string, which will be inlined into the partytown config */
   apply?: string
 }
 
