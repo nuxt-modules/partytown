@@ -5,6 +5,7 @@ import serveStatic from 'serve-static'
 import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
 import type { PartytownConfig } from '@builder.io/partytown/integration'
 import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
+import { withLeadingSlash, withTrailingSlash } from 'ufo'
 
 type ExcludeFrom<G extends Record<string, any>, K> = Pick<
   G,
@@ -22,10 +23,9 @@ export interface ModuleOptions extends ExcludeFrom<PartytownConfig, Function> {
    */
   debug: boolean
   /**
-   * Path where the Partytown library can be found your server. Note that the path must both start
-   * and end with a `/` character, and the files must be hosted from the same origin as the webpage.
+   * Path (relative to your base URL) where the Partytown library should be served from.
    *
-   * @default '/~partytown/'
+   * @default '~partytown'
    */
   lib: string
   /**
@@ -52,11 +52,12 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: nuxt => ({
     debug: nuxt.options.dev,
     forward: [],
-    lib: '/~partytown/',
+    lib: '~partytown',
   }),
   async setup(options, nuxt) {
     // Normalize partytown configuration
     const fns = ['resolveUrl', 'get', 'set', 'apply']
+    options.lib = withLeadingSlash(withTrailingSlash(options.lib))
     const rawConfig = Object.entries(options).map(
       ([key, value]) => [key, fns.includes(key) ? value : JSON.stringify(value)] as [string, string]
     )
