@@ -6,7 +6,7 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
-> [Partytown](https://github.com/BuilderIO/partytown/wiki) integration for [Nuxt](https://v3.nuxtjs.org)
+> [Partytown](https://partytown.builder.io/) integration for [Nuxt](https://v3.nuxtjs.org)
 
 ## Features
 
