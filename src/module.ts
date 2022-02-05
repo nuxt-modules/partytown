@@ -1,59 +1,48 @@
 import { join } from 'path'
 import { promises as fsp } from 'fs'
-import { genArrayFromRaw, genObjectFromRaw, genString } from 'knitwork'
+import { genObjectFromRawEntries } from 'knitwork'
 import serveStatic from 'serve-static'
-import jiti from 'jiti'
 import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
-// TODO: remove when https://github.com/BuilderIO/partytown/pull/63 is merged
-const { copyLibFiles, libDirPath } = jiti(null)(
-  '@builder.io/partytown/utils'
-) as typeof import('@builder.io/partytown/utils')
+import type { PartytownConfig } from '@builder.io/partytown/integration'
+import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
+import { withLeadingSlash, withTrailingSlash } from 'ufo'
 
-export interface ModuleOptions {
+type ExcludeFrom<G extends Record<string, any>, K> = Pick<
+  G,
+  {
+    [P in keyof G]: NonNullable<G[P]> extends K ? never : P
+  }[keyof G]
+>
+
+/** For more information read the full details at https://partytown.builder.io/configuration */
+export interface ModuleOptions extends ExcludeFrom<PartytownConfig, Function> {
   /**
    * When `true`, Partytown scripts are not minified. See the
-   * [Debugging docs](https://github.com/BuilderIO/partytown/wiki/Debugging) on how to enable more logging.
+   * [Debugging docs](https://partytown.builder.io/debugging) on how to enable more logging.
    *
    * @default true in development
    */
   debug: boolean
-  /** Log method calls */
-  logCalls?: boolean
-  /** Log getter calls */
-  logGetters?: boolean
-  /** Log setter calls */
-  logSetters?: boolean
-  /** Log Image() src requests */
-  logImageRequests?: boolean
-  /** Log script executions */
-  logScriptExecution?: boolean
-  /** Log navigator.sendBeacon() requests */
-  logSendBeaconRequests?: boolean
-  /** Log stack traces */
-  logStackTraces?: boolean
   /**
-   * An array of strings representing function calls on the main thread to forward to the web worker. See
-   * [Forwarding Events and Triggers](https://github.com/BuilderIO/partytown/wiki/Forwarding-Events-and-Triggers)
-   * for more info.
+   * Path (relative to your base URL) where the Partytown library should be served from.
    *
-   * @default []
-   */
-  forward: string[]
-  /**
-   * Path where the Partytown library can be found your server. Note that the path must both start
-   * and end with a `/` character, and the files must be hosted from the same origin as the webpage.
-   *
-   * @default '/~partytown/'
+   * @default '~partytown'
    */
   lib: string
   /**
    * Hook that is called to resolve URLs which can be used to modify URLs. The hook uses the API:
    * `resolveUrl(url: URL, location: URL, method: string)`. See
-   * [Proxying Requests](https://github.com/BuilderIO/partytown/wiki/Proxying-Requests) for more information.
+   * [Proxying Requests](https://partytown.builder.io/proxying-requests) for more information.
    *
    * This should be provided as a string, which will be inlined into a `<script>` tag.
    */
   resolveUrl?: string
+  /** This function should be provided as a string, which will be inlined into the partytown config */
+  get?: string
+  /** This function should be provided as a string, which will be inlined into the partytown config */
+  set?: string
+  /** This function should be provided as a string, which will be inlined into the partytown config */
+  apply?: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -67,19 +56,16 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: nuxt => ({
     debug: nuxt.options.dev,
     forward: [],
-    lib: '/~partytown/',
+    lib: '~partytown',
   }),
   async setup(options, nuxt) {
     // Normalize partytown configuration
-    const rawConfig: Record<string, any> = {
-      debug: options.debug,
-      lib: genString(options.lib),
-      forward: genArrayFromRaw(options.forward),
-    }
-    if (options.resolveUrl) {
-      rawConfig.resolveUrl = options.resolveUrl
-    }
-    const renderedConfig = genObjectFromRaw(rawConfig).replace(/\s*\n\s*/g, ' ')
+    const fns = ['resolveUrl', 'get', 'set', 'apply']
+    options.lib = withLeadingSlash(withTrailingSlash(options.lib))
+    const rawConfig = Object.entries(options).map(
+      ([key, value]) => [key, fns.includes(key) ? value : JSON.stringify(value)] as [string, string]
+    )
+    const renderedConfig = genObjectFromRawEntries(rawConfig).replace(/\s*\n\s*/g, ' ')
 
     // Add partytown snippets to document head
     const partytownSnippet = await fsp.readFile(join(libDirPath(), 'partytown.js'), 'utf-8')
@@ -112,14 +98,7 @@ export default defineNuxtModule<ModuleOptions>({
     } else {
       // Copy partytown directory into .output/public in production build
       nuxt.hook('nitro:generate', async ctx => {
-        await copyLibFiles(join(ctx.output.publicDir, options.lib))
-        // Remove debugging JS from production build
-        if (!options.debug) {
-          await fsp.rm(join(ctx.output.publicDir, options.lib, 'debug'), {
-            recursive: true,
-            force: true,
-          })
-        }
+        await copyLibFiles(join(ctx.output.publicDir, options.lib), { debugDir: options.debug })
       })
     }
   },
