@@ -282,10 +282,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@builder.io/partytown@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.3.3.tgz#ef4288d2705aca2a53e744cc2b9bf82783c10015"
-  integrity sha512-nkm2FvNNZoaHO6xUPhcB6+o8ZQqvqvF1TiwR6UnfPkeBXttswPS7JEnhSv9046XbBs6vz+8zycBb/CqKpoJ19w==
+"@builder.io/partytown@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@builder.io/partytown/-/partytown-0.3.4.tgz#c588841d4af67171aa5dc1a914a6d0b6f61bbd74"
+  integrity sha512-lKFoVDoP/kiR7O4gjHFGnMKTIpJIvXoc0S+AcL0683NUUVWTMLy299lyB/0ClxNHVVqG+ebJGkzc/vXlP6sONw==
 
 "@cloudflare/kv-asset-handler@^0.2.0":
   version "0.2.0"
