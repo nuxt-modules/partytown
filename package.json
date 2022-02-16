@@ -37,7 +37,7 @@
     "@types/serve-static": "1.13.10",
     "eslint": "latest",
     "eslint-config-prettier": "^8.3.0",
-    "nuxt3": "^3.0.0-27409835.c53c736",
+    "nuxt3": "^3.0.0-27417251.289d54e",
     "prettier": "2.5.1",
     "release-it": "14.12.4"
   }
