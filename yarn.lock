@@ -468,18 +468,18 @@
     unctx "^1.0.2"
     untyped "^0.3.0"
 
-"@nuxt/kit@npm:@nuxt/kit-edge@^3.0.0-27419629.87eb7d0":
-  version "3.0.0-27419629.87eb7d0"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27419629.87eb7d0.tgz#3bf636c78ec2d93ceb59ee9d5b569960544d056c"
-  integrity sha512-7oOlXPLmxC2LOLGRo5Rp7mKhy+0jZ/Qh3y1X3IxpI45+/z8KTgQzp/tsiwhk17nJmyiCOClRb8wkzROxRVEqWw==
+"@nuxt/kit@npm:@nuxt/kit-edge@^3.0.0-27420403.16e2a54":
+  version "3.0.0-27420403.16e2a54"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27420403.16e2a54.tgz#a6b16e2b135908eb85de8bf2f70f70df1050565d"
+  integrity sha512-W7/2Hd+lbJfDOK7qTOLSu1VFjpZlC/VsfE/wLbbX3BG2UTn3DsGQe3ksqdmGWn9o2XEWJ9snNMroXJPNrqEUkg==
   dependencies:
-    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27419629.87eb7d0"
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27420403.16e2a54"
     c12 "^0.1.3"
     consola "^2.15.3"
     defu "^5.0.1"
     globby "^13.1.1"
     hash-sum "^2.0.0"
-    jiti "^1.12.15"
+    jiti "^1.13.0"
     knitwork "^0.1.0"
     lodash.template "^4.5.0"
     mlly "^0.4.3"
@@ -579,15 +579,15 @@
     std-env "^3.0.1"
     ufo "^0.7.9"
 
-"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27419629.87eb7d0":
-  version "3.0.0-27419629.87eb7d0"
-  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27419629.87eb7d0.tgz#9c3f7113fc101acee5566498f3a483eca5ea451f"
-  integrity sha512-IBm4vS4Eq6yeLiVA3P8KAlYsZQWTlpEHdZKspAnlvZ4B1+gGj9rgyfCBZNE/vFLO9nUFmBPbr2xNGOoB/nXZ4w==
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27420403.16e2a54":
+  version "3.0.0-27420403.16e2a54"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27420403.16e2a54.tgz#10d7698bb744f1dfe7a57505d65e93ecaad46dbc"
+  integrity sha512-CDITD834JnlVHj72z6eGyU/Ezr1h52fv+xk3jybfgo0td38ANqT+vWKlLyBJf089Sd2pAP+SIWCIpfwjoknMKw==
   dependencies:
     c12 "^0.1.3"
     create-require "^1.1.1"
     defu "^5.0.1"
-    jiti "^1.12.15"
+    jiti "^1.13.0"
     pathe "^0.2.0"
     scule "^0.2.1"
     std-env "^3.0.1"
@@ -4970,6 +4970,11 @@ jiti@^1.12.13, jiti@^1.12.14, jiti@^1.12.15, jiti@^1.12.9:
   version "1.12.15"
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.12.15.tgz#8f6a141c06524ab32e05d5e3c9b33eeda54ae775"
   integrity sha512-/+K89y6KJA2nISbWrlc/773XdpDgSQq/LdQ+ZZyw2jRxUNyquPtbsDCCCMRzzNORUgroUGc4nAXxJEnQvpViCA==
+
+jiti@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.13.0.tgz#3cdfc4e651ca0cca4c62ed5e47747b5841d41a8e"
+  integrity sha512-/n9mNxZj/HDSrincJ6RP+L+yXbpnB8FybySBa+IjIaoH9FIxBbrbRT5XUbe8R7zuVM2AQqNMNDDqz0bzx3znOQ==
 
 joycon@^3.0.1:
   version "3.1.1"
