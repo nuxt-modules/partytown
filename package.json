@@ -36,7 +36,7 @@
     "@release-it/conventional-changelog": "4.1.0",
     "@types/serve-static": "1.13.10",
     "eslint": "latest",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.4.0",
     "nuxt3": "^3.0.0-27420403.16e2a54",
     "prettier": "2.5.1",
     "release-it": "14.12.4"
