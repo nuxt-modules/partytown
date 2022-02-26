@@ -517,12 +517,34 @@
     error-stack-parser "^2.0.0"
     string-width "^4.2.3"
 
-"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27424151.dbab979", "@nuxt/kit@npm:@nuxt/kit-edge@^3.0.0-27424151.dbab979":
+"@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-27424151.dbab979":
   version "3.0.0-27424151.dbab979"
   resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27424151.dbab979.tgz#c9f9dcd0f5e8d71be839e89ac5822919e9662c37"
   integrity sha512-xAw7gQ7N6afxHeYXwqogjD3Xme0lP7HE2pORZ91R8v5xRMiiGIsvaXbjZ0u/CXga/kuA2Yn6Yn9kQsPcPAIDOA==
   dependencies:
     "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27424151.dbab979"
+    c12 "^0.1.3"
+    consola "^2.15.3"
+    defu "^5.0.1"
+    globby "^13.1.1"
+    hash-sum "^2.0.0"
+    jiti "^1.13.0"
+    knitwork "^0.1.0"
+    lodash.template "^4.5.0"
+    mlly "^0.4.3"
+    pathe "^0.2.0"
+    pkg-types "^0.3.2"
+    scule "^0.2.1"
+    semver "^7.3.5"
+    unctx "^1.0.2"
+    untyped "^0.3.0"
+
+"@nuxt/kit@npm:@nuxt/kit-edge@^3.0.0-27430570.4cfad4d":
+  version "3.0.0-27430570.4cfad4d"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.0.0-27430570.4cfad4d.tgz#c05dd92134adb7fccf43024c091685e7f253111a"
+  integrity sha512-hFhkr1mxHxiFc1DHT+yO63AkgzHfwXVmjmL7KPkUg1JTZKf4HxcUnQQxtK2+tYeAH4snMoN2VdFRpRBrBD74iQ==
+  dependencies:
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.0.0-27430570.4cfad4d"
     c12 "^0.1.3"
     consola "^2.15.3"
     defu "^5.0.1"
@@ -624,6 +646,21 @@
     defu "^5.0.1"
     jiti "^1.13.0"
     pathe "^0.2.0"
+    scule "^0.2.1"
+    std-env "^3.0.1"
+    ufo "^0.7.9"
+
+"@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-27430570.4cfad4d":
+  version "3.0.0-27430570.4cfad4d"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.0.0-27430570.4cfad4d.tgz#b263ef57e40a70a4b2f00228555053f758c33c10"
+  integrity sha512-9K886GLJsY+yALEQfkTwTjGOeHWsM/qXfxV+8cTVtEWSbuF7zB/ADiDF9Gx/h4gYx6gLOwThkgQpSojRmKAIGQ==
+  dependencies:
+    c12 "^0.1.3"
+    create-require "^1.1.1"
+    defu "^5.0.1"
+    jiti "^1.13.0"
+    pathe "^0.2.0"
+    postcss-import-resolver "^2.0.0"
     scule "^0.2.1"
     std-env "^3.0.1"
     ufo "^0.7.9"
