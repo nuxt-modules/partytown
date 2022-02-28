@@ -2,13 +2,17 @@
   "name": "@nuxtjs/partytown",
   "version": "1.1.0",
   "license": "MIT",
-  "type": "module",
+  "author": {
+    "name": "Daniel Roe <daniel@roe.dev>",
+    "url": "https://github.com/danielroe"
+  },
   "exports": {
     ".": {
       "import": "./dist/module.mjs",
       "require": "./dist/module.cjs"
     }
   },
+  "type": "module",
   "main": "./dist/module.cjs",
   "types": "./dist/types.d.ts",
   "files": [
@@ -25,7 +29,7 @@
   },
   "dependencies": {
     "@builder.io/partytown": "^0.3.6",
-    "@nuxt/kit": "npm:@nuxt/kit-edge@^3.0.0-27430570.4cfad4d",
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
     "knitwork": "^0.1.0",
     "serve-static": "^1.14.2",
     "ufo": "^0.7.11"
@@ -37,7 +41,7 @@
     "@types/serve-static": "1.13.10",
     "eslint": "latest",
     "eslint-config-prettier": "^8.4.0",
-    "nuxt3": "^3.0.0-27430570.4cfad4d",
+    "nuxt3": "latest",
     "prettier": "2.5.1",
     "release-it": "14.12.5"
   }
