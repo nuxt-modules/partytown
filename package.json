@@ -22,8 +22,8 @@
     "build": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "prepublish": "yarn build",
+    "dev:prepare": "yarn build --stub && nuxi prepare playground",
+    "prepack": "yarn build",
     "lint": "eslint --fix --ext .js,.ts,.vue . && prettier --write '**/*.{js,ts,md,vue}'",
     "test": "vitest run"
   },
