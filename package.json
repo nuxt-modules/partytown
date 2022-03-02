@@ -42,7 +42,7 @@
     "@types/serve-static": "1.13.10",
     "c8": "^7.11.0",
     "eslint": "8.10.0",
-    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-prettier": "^8.5.0",
     "nuxt3": "latest",
     "playwright": "^1.19.2",
     "prettier": "2.5.1",
