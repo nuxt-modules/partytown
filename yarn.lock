@@ -4594,6 +4594,11 @@ knitwork@^0.1.0:
   resolved "https://registry.yarnpkg.com/knitwork/-/knitwork-0.1.0.tgz#9495fde93d2390bcfa7439292fe8a44447f7fc67"
   integrity sha512-veAmNJu4Niku+zjm2//+xLGsYTwB8OP1jBHjPU5RbQu9Jl263d5PtbM0OaITlYvhLFLov/R12hs0GL4ujzMY3A==
 
+knitwork@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/knitwork/-/knitwork-0.1.1.tgz#8f3d3a14fd5e81b68149c4b69ae4d5e551cfdb72"
+  integrity sha512-DxjuhTzCDeXjAcsQuqoZhTFF/wqvaVH2YA7QRhBRpsSeaL44S93hDxyvoluApwk3wjMdia7dc9J0Sj9MHD8rxg==
+
 latest-version@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-5.1.0.tgz#119dfe908fe38d15dfa43ecd13fa12ec8832face"
