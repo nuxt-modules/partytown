@@ -38,7 +38,7 @@
     "@nuxt/module-builder": "latest",
     "@nuxt/test-utils": "npm:@nuxt/test-utils-edge@latest",
     "@nuxtjs/eslint-config-typescript": "latest",
-    "@release-it/conventional-changelog": "4.2.0",
+    "@release-it/conventional-changelog": "4.2.2",
     "@types/serve-static": "1.13.10",
     "c8": "^7.11.0",
     "eslint": "8.10.0",
