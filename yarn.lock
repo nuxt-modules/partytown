@@ -7278,6 +7278,11 @@ ufo@^0.7.11, ufo@^0.7.9:
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.7.11.tgz#17defad497981290383c5d26357773431fdbadcb"
   integrity sha512-IT3q0lPvtkqQ8toHQN/BkOi4VIqoqheqM1FnkNWT9y0G8B3xJhwnoKBu5OHx8zHDOvveQzfKuFowJ0VSARiIDg==
 
+ufo@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/ufo/-/ufo-0.8.3.tgz#3a2430f94afc13ba556f6dad498a2a6520dcb5d3"
+  integrity sha512-AIkk06G21y/P+NCatfU+1qldCmI0XCszZLn8AkuKotffF3eqCvlce0KuwM7ZemLE/my0GSYADOAeM5zDYWMB+A==
+
 uglify-js@^3.1.4:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.15.0.tgz#2d6a689d94783cab43975721977a13c2afec28f1"
