@@ -71,6 +71,65 @@ export default defineNuxtConfig({
 })
 ```
 
+## Example Configurations 
+
+Partytown supports a number of options, which you can pass in your `nuxt.config.ts` file:
+
+
+### Crisp
+```js
+import { defineNuxtConfig } from 'nuxt3'
+
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/partytown'],
+  partytown: {
+    forward: ['$crisp', '$crisp.push']
+  },
+  meta: {
+    script: [ // Insert your CRSIP Script here e.g.:
+      { children: 'window.$crisp = []; window.CRISP_WEBSITE_ID = "0000"' },
+      { src: 'https://client.crisp.chat/l.js', async: true, type: 'text/partytown' } 
+    ]
+  }
+})
+```
+
+### Google Tag Manager
+```js
+import { defineNuxtConfig } from 'nuxt3'
+
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/partytown'],
+  partytown: {
+    forward: ["dataLayer.push"]
+  },
+  meta: {
+    script: [ // Insert your Google Tag Manager Script here
+      { src: '-', async: true, type: 'text/partytown' } 
+    ]
+  }
+})
+```
+
+### Plausible Analytics
+```js
+import { defineNuxtConfig } from 'nuxt3'
+
+export default defineNuxtConfig({
+  modules: ['@nuxtjs/partytown'],
+  partytown: {
+    forward: ["$plausible", "$plausible.push]
+  },
+  meta: {
+    script: [
+	  { children: 'window.$plausible = [];' },
+      { src: "https://plausible.io/js/script.js", defer: true, type: 'text/partytown', 'data-domain': "your-domains" }  
+	  // Update this
+    ]
+  }
+})
+```
+
 ## Development
 
 - Run `yarn prepare` to generate type stubs.
