@@ -73,7 +73,6 @@ export default defineNuxtConfig({
 
 ## Example Configurations 
 
-Partytown supports a number of options, which you can pass in your `nuxt.config.ts` file:
 ### Crisp
 ```js
 import { defineNuxtConfig } from 'nuxt3'
