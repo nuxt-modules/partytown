@@ -118,7 +118,7 @@ import { defineNuxtConfig } from 'nuxt3'
 export default defineNuxtConfig({
   modules: ['@nuxtjs/partytown'],
   partytown: {
-    forward: ["$plausible", "$plausible.push]
+    forward: ["$plausible", "$plausible.push"]
   },
   meta: {
     script: [
