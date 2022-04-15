@@ -1,7 +1,6 @@
 import { join } from 'path'
 import { promises as fsp } from 'fs'
 import { genObjectFromRawEntries } from 'knitwork'
-import serveStatic from 'serve-static'
 import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
 import type { PartytownConfig } from '@builder.io/partytown/integration'
 import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
@@ -82,24 +81,18 @@ export default defineNuxtModule<ModuleOptions>({
       )
     } else {
       // Use @vueuse/head syntax to inject scripts
-      nuxt.options.meta.script = nuxt.options.meta.script || []
-      nuxt.options.meta.script.unshift(
+      nuxt.options.app.head.script = nuxt.options.app.head.script || []
+      nuxt.options.app.head.script.unshift(
         { children: `partytown = ${renderedConfig}` },
         { children: partytownSnippet }
       )
     }
 
-    if (nuxt.options.dev) {
-      // Serve the partytown library directly from node_modules in development
-      nuxt.options.serverMiddleware.push({
-        path: options.lib,
-        handler: serveStatic(libDirPath()),
-      })
-    } else {
-      // Copy partytown directory into .output/public in production build
-      nuxt.hook('nitro:generate', async ctx => {
-        await copyLibFiles(join(ctx.output.publicDir, options.lib), { debugDir: options.debug })
-      })
-    }
+    // Add the partytown library directly from node_modules
+    nuxt.options.nitro.publicAssets = nuxt.options.nitro.publicAssets || []
+    nuxt.options.nitro.publicAssets.push({
+      baseURL: options.lib,
+      dir: libDirPath(),
+    })
   },
 })
