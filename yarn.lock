@@ -5418,7 +5418,7 @@ number-is-nan@^1.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt3@^3.0.0-27500677.83d27bd:
+nuxt3@latest:
   version "3.0.0-27500677.83d27bd"
   resolved "https://registry.yarnpkg.com/nuxt3/-/nuxt3-3.0.0-27500677.83d27bd.tgz#3d6276ad298da8a75f42cf00de643ad87925f2e5"
   integrity sha512-sid2XaZLrttI99FGnEX5VoMrgzVP/L/9ewDN68lRw/KIfpNZJndyMKxeIkhiKGFIKURa82paWOBiUu/23YQDbg==
@@ -7187,7 +7187,7 @@ tinypool@^0.1.2:
   resolved "https://registry.yarnpkg.com/tinypool/-/tinypool-0.1.2.tgz#5b1d5f5bb403afac8c67000047951ce76342fda7"
   integrity sha512-fvtYGXoui2RpeMILfkvGIgOVkzJEGediv8UJt7TxdAOY8pnvUkFg/fkvqTfXG9Acc9S17Cnn1S4osDc2164guA==
 
-tinyspy@^0.3.0:
+tinyspy@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/tinyspy/-/tinyspy-0.3.2.tgz#2f95cb14c38089ca690385f339781cd35faae566"
   integrity sha512-2+40EP4D3sFYy42UkgkFFB+kiX2Tg3URG/lVvAZFfLxgGpnWl5qQJuBw1gaLttq8UOS+2p3C0WrhJnQigLTT2Q==
@@ -7629,17 +7629,17 @@ vite@^2.9.1, vite@^2.9.5:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.8.5:
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.8.5.tgz#82c578f1b1a2fc6922dffcac09f59dc854415392"
-  integrity sha512-UOBAfyLUn9++isUDC5vk8joLcaBZj7esLS2Yx3GZSRMWzayOfEEzU1Iv4SBb4HkJun9e1D5ifZoSclhNHKn7IA==
+vitest@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.9.3.tgz#18e7f80bc27d0f370a524647d73ecfa0236011ac"
+  integrity sha512-hKjqdBI732cV5giNLERyAsaJBebstrX5mvTbZr+jUDYUHnX1O4DpAJcHtqBOutuBi7lVIGQ5IF8eWvHHqbCHBA==
   dependencies:
     "@types/chai" "^4.3.0"
     "@types/chai-subset" "^1.3.3"
     chai "^4.3.6"
     local-pkg "^0.4.1"
     tinypool "^0.1.2"
-    tinyspy "^0.3.0"
+    tinyspy "^0.3.2"
     vite "^2.9.1"
 
 vscode-jsonrpc@6.0.0:
