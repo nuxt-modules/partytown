@@ -1,3 +1,12 @@
+
+
+### [1.1.1](https://github.com/nuxt-community/partytown-module/compare/1.1.0...1.1.1) (2022-04-15)
+
+
+### Bug Fixes
+
+* use new nitropack public assets dir & `app.head` ([bf4cfca](https://github.com/nuxt-community/partytown-module/commit/bf4cfca4df10a009abf2c16bfc7edf7be0a4efeb))
+
 ## [1.1.0](https://github.com/nuxt-community/partytown-module/compare/1.0.2...1.1.0) (2022-02-04)
 
 
@@ -19,4 +28,3 @@
 ### Bug Fixes
 
 * add workaround for partytown esm import ([e7e1105](https://github.com/nuxt-community/partytown-module/commit/e7e1105295f4e14d2cdde1ab447b7ef06b02e2c4))
-
