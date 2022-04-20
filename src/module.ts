@@ -3,7 +3,7 @@ import { promises as fsp } from 'fs'
 import { genObjectFromRawEntries } from 'knitwork'
 import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
 import type { PartytownConfig } from '@builder.io/partytown/integration'
-import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
+import { libDirPath } from '@builder.io/partytown/utils'
 import { withLeadingSlash, withTrailingSlash } from 'ufo'
 
 type ExcludeFrom<G extends Record<string, any>, K> = Pick<

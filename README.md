@@ -26,7 +26,7 @@
 2. Add it to the `modules` section of `nuxt.config.ts`
 
    ```js
-   import { defineNuxtConfig } from 'nuxt3'
+   import { defineNuxtConfig } from 'nuxt'
 
    export default defineNuxtConfig({
      modules: ['@nuxtjs/partytown'],
@@ -48,7 +48,7 @@
 Partytown supports a number of options, which you can pass in your `nuxt.config.ts` file:
 
 ```js
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   // ...
@@ -76,7 +76,7 @@ export default defineNuxtConfig({
 ### Crisp
 
 ```js
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: ['@nuxtjs/partytown'],
@@ -96,7 +96,7 @@ export default defineNuxtConfig({
 ### Google Tag Manager
 
 ```js
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: ['@nuxtjs/partytown'],
@@ -115,7 +115,7 @@ export default defineNuxtConfig({
 ### Plausible Analytics
 
 ```js
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   modules: ['@nuxtjs/partytown'],
