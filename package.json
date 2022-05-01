@@ -38,15 +38,15 @@
     "@nuxt/schema": "^3.0.0-rc.1",
     "@nuxt/test-utils": "npm:@nuxt/test-utils-edge@latest",
     "@nuxtjs/eslint-config-typescript": "9.0.0",
-    "@release-it/conventional-changelog": "4.3.0",
+    "@release-it/conventional-changelog": "5.0.0",
     "@types/serve-static": "1.13.10",
     "c8": "^7.11.2",
     "eslint": "8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "nuxt": "npm:nuxt3@latest",
     "prettier": "2.6.2",
-    "release-it": "14.14.3",
+    "release-it": "15.0.0",
     "vite": "^2.9.6",
-    "vitest": "^0.9.4"
+    "vitest": "^0.10.0"
   }
 }
