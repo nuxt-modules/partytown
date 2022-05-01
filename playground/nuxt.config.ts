@@ -3,8 +3,10 @@ import PartyTownModule from '..'
 
 export default defineNuxtConfig({
   modules: [PartyTownModule],
-  meta: {
-    script: [{ src: '/test-script.js', type: 'text/partytown' }],
+  app: {
+    head: {
+      script: [{ src: '/test-script.js', type: 'text/partytown' }],
+    },
   },
   partytown: {
     //

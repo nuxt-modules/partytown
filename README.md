@@ -83,12 +83,14 @@ export default defineNuxtConfig({
   partytown: {
     forward: ['$crisp', '$crisp.push'],
   },
-  meta: {
-    script: [
-      // Insert your CRISP Script here e.g.:
-      { children: 'window.$crisp = []; window.CRISP_WEBSITE_ID = "0000"' },
-      { src: 'https://client.crisp.chat/l.js', async: true, type: 'text/partytown' },
-    ],
+  app: {
+    head: {
+      script: [
+        // Insert your CRISP Script here e.g.:
+        { children: 'window.$crisp = []; window.CRISP_WEBSITE_ID = "0000"' },
+        { src: 'https://client.crisp.chat/l.js', async: true, type: 'text/partytown' },
+      ],
+    },
   },
 })
 ```
@@ -103,11 +105,13 @@ export default defineNuxtConfig({
   partytown: {
     forward: ['dataLayer.push'],
   },
-  meta: {
-    script: [
-      // Insert your Google Tag Manager Script here
-      { src: '-', async: true, type: 'text/partytown' },
-    ],
+  app: {
+    head: {
+      script: [
+        // Insert your Google Tag Manager Script here
+        { src: '-', async: true, type: 'text/partytown' },
+      ],
+    },
   },
 })
 ```
@@ -122,17 +126,19 @@ export default defineNuxtConfig({
   partytown: {
     forward: ['$plausible', '$plausible.push'],
   },
-  meta: {
-    script: [
-      { children: 'window.$plausible = [];' },
-      // Update this
-      {
-        src: 'https://plausible.io/js/script.js',
-        defer: true,
-        type: 'text/partytown',
-        'data-domain': 'your-domains',
-      },
-    ],
+  app: {
+    head: {
+      script: [
+        { children: 'window.$plausible = [];' },
+        // Update this
+        {
+          src: 'https://plausible.io/js/script.js',
+          defer: true,
+          type: 'text/partytown',
+          'data-domain': 'your-domains',
+        },
+      ],
+    },
   },
 })
 ```
