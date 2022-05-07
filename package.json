@@ -31,7 +31,7 @@
     "@builder.io/partytown": "^0.5.4",
     "@nuxt/kit": "^3.0.0-rc.1",
     "knitwork": "^0.1.1",
-    "ufo": "^0.8.3"
+    "ufo": "^0.8.4"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
