@@ -20,7 +20,7 @@
 1. Install `@nuxtjs/partytown`!
 
    ```bash
-   yarn add @nuxtjs/partytown # or npm install @nuxtjs/partytown
+   yarn add --dev @nuxtjs/partytown # or npm install --save-dev @nuxtjs/partytown
    ```
 
 2. Add it to the `modules` section of `nuxt.config.ts`
