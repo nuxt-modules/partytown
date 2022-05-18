@@ -89,6 +89,7 @@ export default defineNuxtModule<ModuleOptions>({
     }
 
     // Add the partytown library directly from node_modules
+    nuxt.options.nitro = nuxt.options.nitro || {}
     nuxt.options.nitro.publicAssets = nuxt.options.nitro.publicAssets || []
     nuxt.options.nitro.publicAssets.push({
       baseURL: options.lib,
