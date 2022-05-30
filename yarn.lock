@@ -410,7 +410,7 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.0.0-rc.1", "@nuxt/kit@^3.0.0-rc.1":
+"@nuxt/kit@3.0.0-rc.1":
   version "3.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.0.0-rc.1.tgz#c6197351970d85eecb17d646667178ecefb2b955"
   integrity sha512-S2x0zdLYLZ4/2lMnS6emSmFPJszPJf70Y4/8gpmkPb4TArEjPNaOTCIz7tKpj/Upo71fv7cfuwYw/X0F2UAntg==
@@ -432,6 +432,30 @@
     semver "^7.3.7"
     unctx "^1.1.4"
     unimport "^0.1.6"
+    untyped "^0.4.4"
+
+"@nuxt/kit@^3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.0.0-rc.3.tgz#9bbedf5be268578d4002766be8eb59b976892cc6"
+  integrity sha512-aD993HKXZ76cwxkM2LCwWRQaOI3RjLCg/kj+8ZS6qN4VrpwrZp4xM59YYIYs3/Vze4OG3D4+0gr0u5zdgf8v8g==
+  dependencies:
+    "@nuxt/schema" "^3.0.0-rc.3"
+    c12 "^0.2.7"
+    consola "^2.15.3"
+    defu "^6.0.0"
+    globby "^13.1.1"
+    hash-sum "^2.0.0"
+    ignore "^5.2.0"
+    jiti "^1.13.0"
+    knitwork "^0.1.1"
+    lodash.template "^4.5.0"
+    mlly "^0.5.2"
+    pathe "^0.3.0"
+    pkg-types "^0.3.2"
+    scule "^0.2.1"
+    semver "^7.3.7"
+    unctx "^1.1.4"
+    unimport "^0.1.9"
     untyped "^0.4.4"
 
 "@nuxt/kit@npm:@nuxt/kit-edge@3.0.0-rc.1-27520989.22954d0":
@@ -484,6 +508,22 @@
     std-env "^3.1.1"
     ufo "^0.8.3"
     unimport "^0.1.6"
+
+"@nuxt/schema@^3.0.0-rc.3":
+  version "3.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-3.0.0-rc.3.tgz#8664535a91e0923a12e19e69f3e396a74c9e4ed9"
+  integrity sha512-vICmOpIk8SjVVUN+MadAMMF/MEXqPgY3jquSjSkmWdydtMOBoxrBpl+5nkpJCtsCq5KJAK8WI+9SCNIkEASCgw==
+  dependencies:
+    c12 "^0.2.7"
+    create-require "^1.1.1"
+    defu "^6.0.0"
+    jiti "^1.13.0"
+    pathe "^0.3.0"
+    postcss-import-resolver "^2.0.0"
+    scule "^0.2.1"
+    std-env "^3.1.1"
+    ufo "^0.8.4"
+    unimport "^0.1.9"
 
 "@nuxt/schema@npm:@nuxt/schema-edge@3.0.0-rc.1-27520989.22954d0":
   version "3.0.0-rc.1-27520989.22954d0"
@@ -5961,6 +6001,11 @@ pathe@^0.2.0:
   resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.2.0.tgz#30fd7bbe0a0d91f0e60bae621f5d19e9e225c339"
   integrity sha512-sTitTPYnn23esFR3RlqYBWn4c45WGeLcsKzQiUpXJAyfcWkolvlYpV8FLo7JishK946oQwMFUCHXQ9AjGPKExw==
 
+pathe@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/pathe/-/pathe-0.3.0.tgz#fd95bc16208263fa6dc1c78c07b3907a528de6eb"
+  integrity sha512-3vUjp552BJzCw9vqKsO5sttHkbYqqsZtH0x1PNtItgqx8BXEXzoY1SYRKcL6BTyVh4lGJGLj0tM42elUDMvcYA==
+
 pathval@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/pathval/-/pathval-1.1.1.tgz#8534e77a77ce7ac5a2512ea21e0fdb8fcf6c3d8d"
@@ -7597,6 +7642,21 @@ unimport@^0.1.6, unimport@^0.1.7, unimport@^0.1.8:
     scule "^0.2.1"
     unplugin "^0.6.2"
 
+unimport@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/unimport/-/unimport-0.1.9.tgz#a8688f37df179eb1768f04d365c62cc74c7b35c5"
+  integrity sha512-ap7MnS7zuA4A8eAyA8CHN3YFw1tMpWQK3rSrh6jvrB3tWkT4EKvslg9sNoax5WuL8TnMaXSydRxwOgUUXrnovg==
+  dependencies:
+    "@rollup/pluginutils" "^4.2.1"
+    escape-string-regexp "^5.0.0"
+    globby "^13.1.1"
+    local-pkg "^0.4.1"
+    magic-string "^0.26.1"
+    mlly "^0.5.2"
+    pathe "^0.3.0"
+    scule "^0.2.1"
+    unplugin "^0.6.3"
+
 unique-string@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/unique-string/-/unique-string-2.0.0.tgz#39c6451f81afb2749de2b233e3f7c5e8843bd89d"
@@ -7628,6 +7688,15 @@ unplugin@^0.6.1, unplugin@^0.6.2:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.6.2.tgz#5646829e7f8a664c8a4498654f258dc6ad3ebf1f"
   integrity sha512-+QONc2uBFQbeo4x5mlJHjTKjR6pmuchMpGVrWhwdGFFMb4ttFZ4E9KqhOOrNcm3Q8NNyB1vJ4s5e36IZC7UWYw==
+  dependencies:
+    chokidar "^3.5.3"
+    webpack-sources "^3.2.3"
+    webpack-virtual-modules "^0.4.3"
+
+unplugin@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/unplugin/-/unplugin-0.6.3.tgz#b8721e2b163a410a7efed726e6a0fc6fbadf975a"
+  integrity sha512-CoW88FQfCW/yabVc4bLrjikN9HC8dEvMU4O7B6K2jsYMPK0l6iAnd9dpJwqGcmXJKRCU9vwSsy653qg+RK0G6A==
   dependencies:
     chokidar "^3.5.3"
     webpack-sources "^3.2.3"
