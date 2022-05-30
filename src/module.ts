@@ -4,7 +4,7 @@ import { genObjectFromRawEntries } from 'knitwork'
 import { defineNuxtModule, isNuxt2, isNuxt3 } from '@nuxt/kit'
 import type { PartytownConfig } from '@builder.io/partytown/integration'
 import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
-import { withLeadingSlash, withTrailingSlash } from 'ufo'
+import { withLeadingSlash, withoutTrailingSlash, withTrailingSlash } from 'ufo'
 
 type ExcludeFrom<G extends Record<string, any>, K> = Pick<
   G,
@@ -102,7 +102,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     nuxt.hook('render:setupMiddleware', async app => {
       const serveStatic = await import('serve-static').then(r => r.default || r)
-      app.use(withLeadingSlash(options.lib), serveStatic(libDirPath()))
+      app.use(withoutTrailingSlash(withLeadingSlash(options.lib)), serveStatic(libDirPath()))
     })
   },
 })
