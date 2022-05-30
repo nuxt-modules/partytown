@@ -1,5 +1,17 @@
 
 
+## [1.2.0](https://github.com/nuxt-community/partytown-module/compare/1.1.2...1.2.0) (2022-05-30)
+
+
+### Features
+
+* experimental support for Nuxt 2 without bridge ([6ab779d](https://github.com/nuxt-community/partytown-module/commit/6ab779d64068ef9a72b1f72fc704a8debfd37258))
+
+
+### Bug Fixes
+
+* initialise `nuxt.options.nitro` for bridge ([73b14fe](https://github.com/nuxt-community/partytown-module/commit/73b14fe38de1a791abb69bc3c5424cf02852286f))
+
 ### [1.1.2](https://github.com/nuxt-community/partytown-module/compare/1.1.1...1.1.2) (2022-04-20)
 
 ### [1.1.1](https://github.com/nuxt-community/partytown-module/compare/1.1.0...1.1.1) (2022-04-15)
