@@ -1,5 +1,12 @@
 
 
+### [1.2.1](https://github.com/nuxt-community/partytown-module/compare/1.2.0...1.2.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* drop trailing slash from serve static config ([08b1f15](https://github.com/nuxt-community/partytown-module/commit/08b1f15e13d2b8552ee8e175b684e0224c08cbd7))
+
 ## [1.2.0](https://github.com/nuxt-community/partytown-module/compare/1.1.2...1.2.0) (2022-05-30)
 
 
