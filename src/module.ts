@@ -1,9 +1,9 @@
 import { join } from 'path'
 import { promises as fsp } from 'fs'
 import { genObjectFromRawEntries } from 'knitwork'
-import { defineNuxtModule, isNuxt2 } from '@nuxt/kit'
+import { defineNuxtModule, isNuxt2, isNuxt3 } from '@nuxt/kit'
 import type { PartytownConfig } from '@builder.io/partytown/integration'
-import { libDirPath } from '@builder.io/partytown/utils'
+import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
 import { withLeadingSlash, withTrailingSlash } from 'ufo'
 
 type ExcludeFrom<G extends Record<string, any>, K> = Pick<
@@ -48,9 +48,6 @@ export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@nuxtjs/partytown',
     configKey: 'partytown',
-    compatibility: {
-      bridge: true,
-    },
   },
   defaults: nuxt => ({
     debug: nuxt.options.dev,
@@ -94,6 +91,18 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.nitro.publicAssets.push({
       baseURL: options.lib,
       dir: libDirPath(),
+    })
+
+    // Experimental support for Nuxt 2 without Bridge
+    if (isNuxt3()) return
+
+    nuxt.hook('generate:done', async () => {
+      await copyLibFiles(join(nuxt.options.generate.dir, options.lib))
+    })
+
+    nuxt.hook('render:setupMiddleware', async app => {
+      const serveStatic = await import('serve-static').then(r => r.default || r)
+      app.use(withLeadingSlash(options.lib), serveStatic(libDirPath()))
     })
   },
 })
