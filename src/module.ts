@@ -101,7 +101,9 @@ export default defineNuxtModule<ModuleOptions>({
     })
 
     nuxt.hook('render:setupMiddleware', async app => {
-      const serveStatic = await import('serve-static').then(r => r.default || r)
+      const serveStatic = await import('serve-static').then(
+        r => r.default || (r as unknown as typeof import('serve-static'))
+      )
       app.use(withoutTrailingSlash(withLeadingSlash(options.lib)), serveStatic(libDirPath()))
     })
   },
