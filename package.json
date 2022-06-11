@@ -30,7 +30,7 @@
   "dependencies": {
     "@builder.io/partytown": "^0.6.1",
     "@nuxt/kit": "^3.0.0-rc.3",
-    "knitwork": "^0.1.1",
+    "knitwork": "^0.1.2",
     "serve-static": "^1.15.0",
     "ufo": "^0.8.4"
   },
