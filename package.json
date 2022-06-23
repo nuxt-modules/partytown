@@ -28,7 +28,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@builder.io/partytown": "^0.6.1",
+    "@builder.io/partytown": "^0.6.2",
     "@nuxt/kit": "^3.0.0-rc.4",
     "knitwork": "^0.1.2",
     "serve-static": "^1.15.0",
