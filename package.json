@@ -46,7 +46,7 @@
     "eslint-config-prettier": "^8.5.0",
     "nuxt": "npm:nuxt3@latest",
     "prettier": "2.7.1",
-    "release-it": "15.0.0",
+    "release-it": "15.1.1",
     "vite": "^2.9.13",
     "vitest": "^0.16.0"
   }
