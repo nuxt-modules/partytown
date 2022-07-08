@@ -47,7 +47,7 @@
     "nuxt": "npm:nuxt3@latest",
     "prettier": "2.7.1",
     "release-it": "15.1.1",
-    "vite": "^2.9.13",
+    "vite": "^2.9.14",
     "vitest": "^0.17.1"
   }
 }
