@@ -41,7 +41,7 @@
     "@nuxtjs/eslint-config-typescript": "10.0.0",
     "@release-it/conventional-changelog": "5.0.0",
     "@types/serve-static": "1.13.10",
-    "c8": "^7.11.3",
+    "c8": "^7.12.0",
     "eslint": "8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "nuxt": "npm:nuxt3@latest",
