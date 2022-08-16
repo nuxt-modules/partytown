@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>danielroe/renovate",
+    "github>nuxt/renovate-config-nuxt",
     "packages:linters",
     ":labels(dependencies,devops)",
     ":maintainLockFilesWeekly",
