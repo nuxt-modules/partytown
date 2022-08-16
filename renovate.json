@@ -1,27 +1,28 @@
 {
   "extends": [
-    "config:base",
+    "github>danielroe/renovate",
     "packages:linters",
     ":labels(dependencies,devops)",
     ":maintainLockFilesWeekly",
     ":enableVulnerabilityAlerts",
     ":automergeLinters",
     ":automergeTypes",
-    ":semanticCommitTypeAll(chore)",
     ":automergePatch"
   ],
   "rebaseStalePrs": true,
   "prCreation": "not-pending",
-  "rangeStrategy": "bump",
   "assignees": ["danielroe"],
-  "npm": {
-    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
-  },
   "packageRules": [
     {
       "packagePatterns": ["lint"],
       "groupName": "all lint dependencies",
       "groupSlug": "all-lint"
+    },
+    {
+      "groupName": "nuxt core",
+      "groupSlug": "nuxt",
+      "matchPackageNames": ["nuxt", "nuxt3"],
+      "matchPackagePatterns": ["^@nuxt/"]
     }
   ]
 }
