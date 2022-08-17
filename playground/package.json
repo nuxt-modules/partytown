@@ -1,1 +1,14 @@
-{}
+{
+  "name": "partytown-module-playground",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/partytown": "latest",
+    "nuxt": "3.0.0-rc.8"
+  }
+}

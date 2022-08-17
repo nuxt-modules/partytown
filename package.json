@@ -22,8 +22,8 @@
     "build": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "yarn build --stub && nuxi prepare playground",
-    "prepack": "yarn build",
+    "dev:prepare": "pnpm build --stub && nuxi prepare playground",
+    "prepack": "pnpm build",
     "lint": "eslint --fix --ext .js,.ts,.vue . && prettier --write '**/*.{js,ts,md,vue}'",
     "test": "vitest run"
   },
@@ -48,7 +48,13 @@
     "nuxt": "npm:nuxt3@latest",
     "prettier": "2.7.1",
     "release-it": "15.3.0",
+    "typescript": "^4.7.4",
     "vite": "^2.9.15",
-    "vitest": "^0.22.0"
-  }
+    "vitest": "^0.22.0",
+    "vue": "^3.2.37"
+  },
+  "resolutions": {
+    "@nuxtjs/partytown": "link:./"
+  },
+  "packageManager": "pnpm@7.9.0"
 }
