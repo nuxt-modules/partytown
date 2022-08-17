@@ -35,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Test built module
-        run: pnpm test --coverage
+        run: pnpm test -- --coverage
 
       - name: Coverage
         uses: codecov/codecov-action@v3
