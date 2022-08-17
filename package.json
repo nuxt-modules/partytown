@@ -39,7 +39,7 @@
     "@nuxt/schema": "^3.0.0-rc.8",
     "@nuxt/test-utils": "npm:@nuxt/test-utils-edge@latest",
     "@nuxtjs/eslint-config-typescript": "10.0.0",
-    "@release-it/conventional-changelog": "5.0.0",
+    "@release-it/conventional-changelog": "5.1.0",
     "@types/serve-static": "1.15.0",
     "@vitest/coverage-c8": "^0.22.0",
     "c8": "^7.12.0",
