@@ -1,5 +1,12 @@
 
 
+### [1.2.2](https://github.com/nuxt-community/partytown-module/compare/1.2.1...1.2.2) (2022-09-03)
+
+
+### Bug Fixes
+
+* add explicit type for `serve-static` import ([9d6cc17](https://github.com/nuxt-community/partytown-module/commit/9d6cc17b1a7388a52c06e4a48dca08e513c6a097))
+
 ### [1.2.1](https://github.com/nuxt-modules/partytown/compare/1.2.0...1.2.1) (2022-05-30)
 
 
