@@ -41,7 +41,7 @@
     "@nuxtjs/eslint-config-typescript": "11.0.0",
     "@release-it/conventional-changelog": "5.1.0",
     "@types/serve-static": "1.15.0",
-    "@vitest/coverage-c8": "^0.22.1",
+    "@vitest/coverage-c8": "^0.23.2",
     "c8": "^7.12.0",
     "eslint": "8.23.1",
     "eslint-config-prettier": "^8.5.0",
@@ -49,13 +49,13 @@
     "prettier": "2.7.1",
     "release-it": "15.4.1",
     "typescript": "^4.8.2",
-    "vite": "^3.0.9",
-    "vitest": "^0.22.1",
+    "vite": "^3.1.0",
+    "vitest": "^0.23.2",
     "vue": "^3.2.38"
   },
   "resolutions": {
     "@nuxtjs/partytown": "link:./",
     "@nuxt/vite-builder": "npm:@nuxt/vite-builder-edge@latest"
   },
-  "packageManager": "pnpm@7.9.3"
+  "packageManager": "pnpm@7.11.0"
 }
