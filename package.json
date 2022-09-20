@@ -57,5 +57,5 @@
     "@nuxtjs/partytown": "link:./",
     "@nuxt/vite-builder": "npm:@nuxt/vite-builder-edge@latest"
   },
-  "packageManager": "pnpm@7.11.0"
+  "packageManager": "pnpm@7.12.1"
 }
