@@ -32,7 +32,7 @@
     "@nuxt/kit": "^3.0.0-rc.11",
     "knitwork": "^0.1.2",
     "serve-static": "^1.15.0",
-    "ufo": "^0.8.5"
+    "ufo": "^0.8.6"
   },
   "devDependencies": {
     "@nuxt/module-builder": "latest",
@@ -56,5 +56,5 @@
   "resolutions": {
     "@nuxtjs/partytown": "link:./"
   },
-  "packageManager": "pnpm@7.13.4"
+  "packageManager": "pnpm@7.13.5"
 }
