@@ -15,8 +15,8 @@ importers:
       '@nuxtjs/eslint-config-typescript': 11.0.0
       '@release-it/conventional-changelog': 5.1.1
       '@types/serve-static': 1.15.0
-      '@vitest/coverage-c8': ^0.25.1
-      c8: ^7.12.0
+      '@vitest/coverage-c8': 0.25.1
+      c8: 7.12.0
       eslint: 8.27.0
       eslint-config-prettier: ^8.5.0
       knitwork: ^0.1.2
@@ -27,7 +27,7 @@ importers:
       typescript: ^4.8.4
       ufo: ^0.8.6
       vite: ^3.2.3
-      vitest: ^0.25.1
+      vitest: 0.25.1
       vue: ^3.2.41
     dependencies:
       '@builder.io/partytown': 0.7.1
