@@ -44,7 +44,7 @@
     "@vitest/coverage-c8": "0.25.1",
     "c8": "7.12.0",
     "eslint": "8.27.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "8.5.0",
     "nuxt": "npm:nuxt3@3.0.0-rc.13-27781436.1f6b3be",
     "prettier": "2.7.1",
     "release-it": "15.5.0",
