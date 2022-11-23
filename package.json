@@ -46,7 +46,7 @@
     "eslint": "8.28.0",
     "eslint-config-prettier": "8.5.0",
     "nuxt": "npm:nuxt3@3.0.0-rc.13-27781436.1f6b3be",
-    "prettier": "2.7.1",
+    "prettier": "2.8.0",
     "release-it": "15.5.0",
     "typescript": "4.9.3",
     "vite": "3.2.4",
