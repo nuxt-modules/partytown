@@ -19,7 +19,7 @@ importers:
       c8: 7.12.0
       eslint: 8.28.0
       eslint-config-prettier: 8.5.0
-      knitwork: ^0.1.2
+      knitwork: ^1.0.0
       nuxt: npm:nuxt3@3.0.0-rc.13-27781436.1f6b3be
       prettier: 2.8.0
       release-it: 15.5.0
@@ -32,7 +32,7 @@ importers:
     dependencies:
       '@builder.io/partytown': 0.7.1
       '@nuxt/kit': 3.0.0-rc.12
-      knitwork: 0.1.2
+      knitwork: 1.0.0
       serve-static: 1.15.0
       ufo: 0.8.6
     devDependencies:
@@ -5272,6 +5272,10 @@ packages:
 
   /knitwork/0.1.2:
     resolution: {integrity: sha512-2ekmY2S/VB3YGVhrIFadyJQpkjMFSf48tsXCnA+kjs4FEQIT+5FLyOF0No/X58z/2E/VaMyeJfukRoVT4gMsfQ==}
+
+  /knitwork/1.0.0:
+    resolution: {integrity: sha512-dWl0Dbjm6Xm+kDxhPQJsCBTxrJzuGl0aP9rhr+TG8D3l+GL90N8O8lYUi7dTSAN2uuDqCtNgb6aEuQH5wsiV8Q==}
+    dev: false
 
   /latest-version/7.0.0:
     resolution: {integrity: sha512-KvNT4XqAMzdcL6ka6Tl3i2lYeFDgXNCuIX+xNx6ZMVR1dFq+idXd9FLKNMOIx0t9mJ9/HudyX4oZWXZQ0UJHeg==}
