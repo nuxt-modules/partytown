@@ -25,7 +25,7 @@ importers:
       release-it: 15.5.0
       serve-static: ^1.15.0
       typescript: 4.9.3
-      ufo: ^0.8.6
+      ufo: ^1.0.0
       vite: 3.2.4
       vitest: 0.25.3
       vue: 3.2.45
@@ -34,7 +34,7 @@ importers:
       '@nuxt/kit': 3.0.0-rc.12
       knitwork: 0.1.2
       serve-static: 1.15.0
-      ufo: 0.8.6
+      ufo: 1.0.0
     devDependencies:
       '@nuxt/module-builder': 0.2.1
       '@nuxt/schema': 3.0.0-rc.12
@@ -8006,7 +8006,6 @@ packages:
 
   /ufo/1.0.0:
     resolution: {integrity: sha512-DRty0ZBNlJ2R59y4mEupJRKLbkLQsc4qtxjpQv78AwEDuBkaUogMc2LkeqW3HddFlw6NwnXYfdThEZOiNgkmmQ==}
-    dev: true
 
   /uglify-js/3.17.1:
     resolution: {integrity: sha512-+juFBsLLw7AqMaqJ0GFvlsGZwdQfI2ooKQB39PSBgMnMakcFosi9O8jCwE+2/2nMNcc0z63r9mwjoDG8zr+q0Q==}
