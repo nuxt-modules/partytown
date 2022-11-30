@@ -1,5 +1,7 @@
 
 
+## [1.3.0](https://github.com/nuxt-community/partytown-module/compare/1.2.2...1.3.0) (2022-11-30)
+
 ### [1.2.2](https://github.com/nuxt-community/partytown-module/compare/1.2.1...1.2.2) (2022-09-03)
 
 
