@@ -54,7 +54,7 @@ export default defineNuxtModule<ModuleOptions>({
     forward: [],
     lib: '~partytown',
   }),
-  async setup(options, nuxt) {
+  async setup (options, nuxt) {
     // Normalize partytown configuration
     const fns = ['resolveUrl', 'get', 'set', 'apply']
     options.lib = withLeadingSlash(withTrailingSlash(options.lib))
@@ -66,13 +66,15 @@ export default defineNuxtModule<ModuleOptions>({
     // Add partytown snippets to document head
     const partytownSnippet = await fsp.readFile(join(libDirPath(), 'partytown.js'), 'utf-8')
     if (isNuxt2()) {
+      // TODO: use @nuxt/bridge-schema
+      const nuxt2Options: any = nuxt.options
       // Use vue-meta syntax to inject scripts
-      nuxt.options.head = nuxt.options.head || {}
-      nuxt.options.head.__dangerouslyDisableSanitizersByTagID =
-        nuxt.options.head.__dangerouslyDisableSanitizersByTagID || {}
-      nuxt.options.head.__dangerouslyDisableSanitizersByTagID.partytown = ['innerHTML']
-      nuxt.options.head.__dangerouslyDisableSanitizersByTagID['partytown-config'] = ['innerHTML']
-      nuxt.options.head.script.unshift(
+      nuxt2Options.head = nuxt2Options.head || {}
+      nuxt2Options.head.__dangerouslyDisableSanitizersByTagID =
+        nuxt2Options.head.__dangerouslyDisableSanitizersByTagID || {}
+      nuxt2Options.head.__dangerouslyDisableSanitizersByTagID.partytown = ['innerHTML']
+      nuxt2Options.head.__dangerouslyDisableSanitizersByTagID['partytown-config'] = ['innerHTML']
+      nuxt2Options.head.script.unshift(
         { hid: 'partytown-config', innerHTML: `partytown = ${renderedConfig}` },
         { hid: 'partytown', innerHTML: partytownSnippet }
       )
@@ -96,10 +98,13 @@ export default defineNuxtModule<ModuleOptions>({
     // Experimental support for Nuxt 2 without Bridge
     if (isNuxt3()) return
 
+    // @ts-expect-error TODO: use @nuxt/bridge-schema
     nuxt.hook('generate:done', async () => {
+      // @ts-expect-error TODO: use @nuxt/bridge-schema
       await copyLibFiles(join(nuxt.options.generate.dir, options.lib))
     })
 
+    // @ts-expect-error TODO: use @nuxt/bridge-schema
     nuxt.hook('render:setupMiddleware', async app => {
       const serveStatic = await import('serve-static').then(
         r => r.default || (r as unknown as typeof import('serve-static'))
