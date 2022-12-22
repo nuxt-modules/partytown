@@ -26,7 +26,7 @@ importers:
       serve-static: ^1.15.0
       typescript: 4.9.4
       ufo: ^1.0.1
-      vite: 4.0.2
+      vite: 4.0.3
       vitest: 0.26.2
       vue: 3.2.45
     dependencies:
@@ -50,7 +50,7 @@ importers:
       prettier: 2.8.1
       release-it: 15.5.1
       typescript: 4.9.4
-      vite: 4.0.2
+      vite: 4.0.3
       vitest: 0.26.2
       vue: 3.2.45
 
@@ -8032,7 +8032,7 @@ packages:
       pathe: 0.2.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.0.2_@types+node@18.11.10
+      vite: 4.0.3_@types+node@18.11.10
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8152,8 +8152,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.0.2:
-    resolution: {integrity: sha512-QJaY3R+tFlTagH0exVqbgkkw45B+/bXVBzF2ZD1KB5Z8RiAoiKo60vSUf6/r4c2Vh9jfGBKM4oBI9b4/1ZJYng==}
+  /vite/4.0.3:
+    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -8185,8 +8185,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.0.2_@types+node@18.11.10:
-    resolution: {integrity: sha512-QJaY3R+tFlTagH0exVqbgkkw45B+/bXVBzF2ZD1KB5Z8RiAoiKo60vSUf6/r4c2Vh9jfGBKM4oBI9b4/1ZJYng==}
+  /vite/4.0.3_@types+node@18.11.10:
+    resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -8254,7 +8254,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
-      vite: 4.0.2_@types+node@18.11.10
+      vite: 4.0.3_@types+node@18.11.10
       vite-node: 0.26.2_@types+node@18.11.10
     transitivePeerDependencies:
       - less
