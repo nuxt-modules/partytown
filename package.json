@@ -56,5 +56,5 @@
   "resolutions": {
     "@nuxtjs/partytown": "link:./"
   },
-  "packageManager": "pnpm@7.24.3"
+  "packageManager": "pnpm@7.25.0"
 }
