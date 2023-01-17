@@ -99,7 +99,7 @@ export default defineNuxtModule<ModuleOptions>({
     if (isNuxt3()) return
 
     // @ts-expect-error TODO: use @nuxt/bridge-schema
-    nuxt.hook('generate:done', async () => {
+    nuxt.hook('build:compiled', async () => {
       // @ts-expect-error TODO: use @nuxt/bridge-schema
       await copyLibFiles(join(nuxt.options.generate.dir, options.lib))
     })
