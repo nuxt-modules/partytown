@@ -15,7 +15,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': 12.0.0
       '@release-it/conventional-changelog': 5.1.1
       '@types/serve-static': 1.15.0
-      '@vitest/coverage-c8': 0.27.1
+      '@vitest/coverage-c8': 0.27.2
       c8: 7.12.0
       eslint: 8.32.0
       eslint-config-prettier: 8.6.0
@@ -27,7 +27,7 @@ importers:
       typescript: 4.9.4
       ufo: ^1.0.1
       vite: 4.0.4
-      vitest: 0.27.1
+      vitest: 0.27.2
       vue: 3.2.45
     dependencies:
       '@builder.io/partytown': 0.7.2
@@ -42,7 +42,7 @@ importers:
       '@nuxtjs/eslint-config-typescript': 12.0.0_7uibuqfxkfaozanbtbziikiqje
       '@release-it/conventional-changelog': 5.1.1_release-it@15.6.0
       '@types/serve-static': 1.15.0
-      '@vitest/coverage-c8': 0.27.1
+      '@vitest/coverage-c8': 0.27.2
       c8: 7.12.0
       eslint: 8.32.0
       eslint-config-prettier: 8.6.0_eslint@8.32.0
@@ -51,7 +51,7 @@ importers:
       release-it: 15.6.0
       typescript: 4.9.4
       vite: 4.0.4
-      vitest: 0.27.1
+      vitest: 0.27.2
       vue: 3.2.45
 
   playground:
@@ -1684,11 +1684,11 @@ packages:
       vue: 3.2.45
     dev: true
 
-  /@vitest/coverage-c8/0.27.1:
-    resolution: {integrity: sha512-/9VTGDIAp4hv8PBawfyijxhkiyucfOxFRRP+7kzy3Dj0wONy1Mc2MBoPmiH4aZVc0LViQqecrQLs8JVGt42keA==}
+  /@vitest/coverage-c8/0.27.2:
+    resolution: {integrity: sha512-1MFwlwfwIfPFLfu6aN+dZ5jo2aOah5nAwoq/SrqUkt9rXzUmohLOgI1GTT0PpXbJKqaZicIlWuBjiC+BjVgRwQ==}
     dependencies:
       c8: 7.12.0
-      vitest: 0.27.1
+      vitest: 0.27.2
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -8018,8 +8018,8 @@ packages:
       - terser
     dev: true
 
-  /vite-node/0.27.1_@types+node@18.11.10:
-    resolution: {integrity: sha512-d6+ue/3NzsfndWaPbYh/bFkHbmAWfDXI4B874zRx+WREnG6CUHUbBC8lKaRYZjeR6gCPN5m1aVNNRXBYICA9XA==}
+  /vite-node/0.27.2_@types+node@18.11.10:
+    resolution: {integrity: sha512-IDwuVhslF10qCnWOGJui7/2KksAOBHi+UbVo6Pqt4f5lgn+kS2sVvYDsETRG5PSuslisGB5CFGvb9I6FQgymBQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     dependencies:
@@ -8217,8 +8217,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.27.1:
-    resolution: {integrity: sha512-1sIpQ1DVFTEn7c1ici1XHcVfdU4nKiBmPtPAtGKJJJLuJjojTv/OHGgcf69P57alM4ty8V4NMv+7Yoi5Cxqx9g==}
+  /vitest/0.27.2:
+    resolution: {integrity: sha512-y7tdsL2uaQy+KF18AlmNHZe29ukyFytlxrpSTwwmgLE2XHR/aPucJP9FLjWoqjgqFlXzRAjHlFJLU+HDyI/OsA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -8255,7 +8255,7 @@ packages:
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 4.0.4_@types+node@18.11.10
-      vite-node: 0.27.1_@types+node@18.11.10
+      vite-node: 0.27.2_@types+node@18.11.10
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
