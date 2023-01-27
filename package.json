@@ -41,7 +41,7 @@
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@release-it/conventional-changelog": "5.1.1",
     "@types/serve-static": "1.15.0",
-    "@vitest/coverage-c8": "0.28.1",
+    "@vitest/coverage-c8": "0.28.2",
     "c8": "7.12.0",
     "eslint": "8.32.0",
     "eslint-config-prettier": "8.6.0",
@@ -50,7 +50,7 @@
     "release-it": "15.6.0",
     "typescript": "4.9.4",
     "vite": "4.0.4",
-    "vitest": "0.28.1",
+    "vitest": "0.28.2",
     "vue": "3.2.45"
   },
   "resolutions": {
