@@ -25,7 +25,7 @@ importers:
       serve-static: ^1.15.0
       typescript: 4.9.5
       ufo: ^1.0.1
-      vite: 4.1.2
+      vite: 4.1.4
       vitest: 0.28.5
       vue: 3.2.47
     dependencies:
@@ -48,7 +48,7 @@ importers:
       nuxt: 3.2.2_7kw3g6rralp5ps6mg3uyzz6azm
       prettier: 2.8.4
       typescript: 4.9.5
-      vite: 4.1.2
+      vite: 4.1.4
       vitest: 0.28.5
       vue: 3.2.47
 
@@ -1080,8 +1080,8 @@ packages:
     dependencies:
       '@nuxt/kit': 3.2.2_rollup@3.16.0
       '@rollup/plugin-replace': 5.0.2_rollup@3.16.0
-      '@vitejs/plugin-vue': 4.0.0_vite@4.1.2+vue@3.2.47
-      '@vitejs/plugin-vue-jsx': 3.0.0_vite@4.1.2+vue@3.2.47
+      '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
+      '@vitejs/plugin-vue-jsx': 3.0.0_vite@4.1.4+vue@3.2.47
       autoprefixer: 10.4.13_postcss@8.4.21
       chokidar: 3.5.3
       cssnano: 5.1.15_postcss@8.4.21
@@ -1108,9 +1108,9 @@ packages:
       strip-literal: 1.0.1
       ufo: 1.1.0
       unplugin: 1.1.0
-      vite: 4.1.2
+      vite: 4.1.4
       vite-node: 0.28.5
-      vite-plugin-checker: 0.5.6_vite@4.1.2
+      vite-plugin-checker: 0.5.6_vite@4.1.4
       vue: 3.2.47
       vue-bundle-renderer: 1.0.2
     transitivePeerDependencies:
@@ -1139,8 +1139,8 @@ packages:
     dependencies:
       '@nuxt/kit': 3.2.2_rollup@3.16.0
       '@rollup/plugin-replace': 5.0.2_rollup@3.16.0
-      '@vitejs/plugin-vue': 4.0.0_vite@4.1.2+vue@3.2.47
-      '@vitejs/plugin-vue-jsx': 3.0.0_vite@4.1.2+vue@3.2.47
+      '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
+      '@vitejs/plugin-vue-jsx': 3.0.0_vite@4.1.4+vue@3.2.47
       autoprefixer: 10.4.13_postcss@8.4.21
       chokidar: 3.5.3
       cssnano: 5.1.15_postcss@8.4.21
@@ -1167,9 +1167,9 @@ packages:
       strip-literal: 1.0.1
       ufo: 1.1.0
       unplugin: 1.1.0
-      vite: 4.1.2
+      vite: 4.1.4
       vite-node: 0.28.5
-      vite-plugin-checker: 0.5.6_gkpcdygh3hbpydq37kg2w2vjgy
+      vite-plugin-checker: 0.5.6_c5l4fvfo4qz6bryf6ezordwsyq
       vue: 3.2.47
       vue-bundle-renderer: 1.0.2
     transitivePeerDependencies:
@@ -1679,7 +1679,7 @@ packages:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue-jsx/3.0.0_vite@4.1.2+vue@3.2.47:
+  /@vitejs/plugin-vue-jsx/3.0.0_vite@4.1.4+vue@3.2.47:
     resolution: {integrity: sha512-vurkuzgac5SYuxd2HUZqAFAWGTF10diKBwJNbCvnWijNZfXd+7jMtqjPFbGt7idOJUn584fP1Ar9j/GN2jQ3Ew==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -1689,20 +1689,20 @@ packages:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-typescript': 7.20.2_@babel+core@7.20.12
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
-      vite: 4.1.2
+      vite: 4.1.4
       vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@vitejs/plugin-vue/4.0.0_vite@4.1.2+vue@3.2.47:
+  /@vitejs/plugin-vue/4.0.0_vite@4.1.4+vue@3.2.47:
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.2
+      vite: 4.1.4
       vue: 3.2.47
     dev: true
 
@@ -6755,7 +6755,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.1.2
+      vite: 4.1.4
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6778,7 +6778,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.1.2_@types+node@18.11.10
+      vite: 4.1.4_@types+node@18.11.10
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6789,7 +6789,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-checker/0.5.6_gkpcdygh3hbpydq37kg2w2vjgy:
+  /vite-plugin-checker/0.5.6_c5l4fvfo4qz6bryf6ezordwsyq:
     resolution: {integrity: sha512-ftRyON0gORUHDxcDt2BErmsikKSkfvl1i2DoP6Jt2zDO9InfvM6tqO1RkXhSjkaXEhKPea6YOnhFaZxW3BzudQ==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -6834,14 +6834,14 @@ packages:
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
       typescript: 4.9.5
-      vite: 4.1.2
+      vite: 4.1.4
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.7
       vscode-uri: 3.0.6
     dev: true
 
-  /vite-plugin-checker/0.5.6_vite@4.1.2:
+  /vite-plugin-checker/0.5.6_vite@4.1.4:
     resolution: {integrity: sha512-ftRyON0gORUHDxcDt2BErmsikKSkfvl1i2DoP6Jt2zDO9InfvM6tqO1RkXhSjkaXEhKPea6YOnhFaZxW3BzudQ==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -6884,15 +6884,15 @@ packages:
       npm-run-path: 4.0.1
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
-      vite: 4.1.2
+      vite: 4.1.4
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.7
       vscode-uri: 3.0.6
     dev: true
 
-  /vite/4.1.2:
-    resolution: {integrity: sha512-MWDb9Rfy3DI8omDQySbMK93nQqStwbsQWejXRY2EBzEWKmLAXWb1mkI9Yw2IJrc+oCvPCI1Os5xSSIBYY6DEAw==}
+  /vite/4.1.4:
+    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -6924,8 +6924,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.1.2_@types+node@18.11.10:
-    resolution: {integrity: sha512-MWDb9Rfy3DI8omDQySbMK93nQqStwbsQWejXRY2EBzEWKmLAXWb1mkI9Yw2IJrc+oCvPCI1Os5xSSIBYY6DEAw==}
+  /vite/4.1.4_@types+node@18.11.10:
+    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -7001,7 +7001,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.1.2_@types+node@18.11.10
+      vite: 4.1.4_@types+node@18.11.10
       vite-node: 0.28.5_@types+node@18.11.10
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
