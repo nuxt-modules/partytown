@@ -13,7 +13,7 @@ importers:
       '@nuxt/schema': 3.2.2
       '@nuxt/test-utils': 3.2.2
       '@nuxtjs/eslint-config-typescript': 12.0.0
-      '@types/serve-static': 1.15.0
+      '@types/serve-static': 1.15.1
       '@vitest/coverage-c8': 0.28.5
       bumpp: 9.0.0
       c8: 7.13.0
@@ -39,7 +39,7 @@ importers:
       '@nuxt/schema': 3.2.2
       '@nuxt/test-utils': 3.2.2_vue@3.2.47
       '@nuxtjs/eslint-config-typescript': 12.0.0_7kw3g6rralp5ps6mg3uyzz6azm
-      '@types/serve-static': 1.15.0
+      '@types/serve-static': 1.15.1
       '@vitest/coverage-c8': 0.28.5
       bumpp: 9.0.0
       c8: 7.13.0
@@ -1483,8 +1483,8 @@ packages:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
     dev: true
 
-  /@types/serve-static/1.15.0:
-    resolution: {integrity: sha512-z5xyF6uh8CbjAu9760KDKsH2FcDxZ2tFCsA4HIMWE6IkiYMXfVoa+4f9KX+FN0ZLsaMw1WNG2ETLA6N+/YA+cg==}
+  /@types/serve-static/1.15.1:
+    resolution: {integrity: sha512-NUo5XNiAdULrJENtJXZZ3fHtfMolzZwczzBbnAeBbqBwG+LaG6YaJtuwzwGSQZ2wsCrxjEhNNjAkKigy3n8teQ==}
     dependencies:
       '@types/mime': 3.0.1
       '@types/node': 18.11.10
