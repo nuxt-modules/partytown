@@ -25,7 +25,7 @@ importers:
       serve-static: ^1.15.0
       typescript: 5.0.2
       ufo: ^1.0.1
-      vite: 4.2.0
+      vite: 4.2.1
       vitest: 0.29.3
       vue: 3.2.47
     dependencies:
@@ -48,7 +48,7 @@ importers:
       nuxt: 3.2.2_j4766f7ecgqbon3u7zlxn5zszu
       prettier: 2.8.4
       typescript: 5.0.2
-      vite: 4.2.0
+      vite: 4.2.1
       vitest: 0.29.3
       vue: 3.2.47
 
@@ -6765,7 +6765,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.2.0
+      vite: 4.2.1
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6786,7 +6786,7 @@ packages:
       mlly: 1.1.1
       pathe: 1.1.0
       picocolors: 1.0.0
-      vite: 4.2.0_@types+node@18.11.10
+      vite: 4.2.1_@types+node@18.11.10
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -6932,8 +6932,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.2.0:
-    resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
+  /vite/4.2.1:
+    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -6965,8 +6965,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.2.0_@types+node@18.11.10:
-    resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
+  /vite/4.2.1_@types+node@18.11.10:
+    resolution: {integrity: sha512-7MKhqdy0ISo4wnvwtqZkjke6XN4taqQ2TBaTccLIpOKv7Vp2h4Y+NpmWCnGDeSvvn45KxvWgGyb0MkHvY1vgbg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -7042,7 +7042,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.2.0_@types+node@18.11.10
+      vite: 4.2.1_@types+node@18.11.10
       vite-node: 0.29.3_@types+node@18.11.10
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
