@@ -50,7 +50,7 @@
     "typescript": "5.0.4",
     "vite": "4.3.7",
     "vitest": "0.31.1",
-    "vue": "3.3.2"
+    "vue": "3.3.4"
   },
   "resolutions": {
     "@nuxtjs/partytown": "link:./"
