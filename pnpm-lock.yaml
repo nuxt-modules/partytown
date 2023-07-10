@@ -6,6 +6,7 @@ settings:
 
 overrides:
   '@nuxtjs/partytown': link:./
+  '@nuxt/kit': 3.6.0
 
 importers:
 
@@ -15,7 +16,7 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0
       '@nuxt/kit':
-        specifier: ^3.6.0
+        specifier: 3.6.0
         version: 3.6.0(rollup@3.25.1)
       knitwork:
         specifier: ^1.0.0

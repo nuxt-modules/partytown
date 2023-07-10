@@ -52,7 +52,8 @@
     "vue": "3.3.4"
   },
   "resolutions": {
-    "@nuxtjs/partytown": "link:./"
+    "@nuxtjs/partytown": "link:./",
+    "@nuxt/kit": "3.6.0"
   },
   "packageManager": "pnpm@8.6.6"
 }
