@@ -18,11 +18,11 @@ describe('module', () => {
 
   it('injects partytown config', async () => {
     const result = await $fetch('/')
-    expect(result).toContain('<script>partytown = { debug: false')
+    expect(result).toContain('<script id="partytown-config">partytown = { debug: false')
   })
 
   it('injects partytown script', async () => {
     const result = await $fetch('/')
-    expect(result).toContain('<script>/* Partytown')
+    expect(result).toContain('<script id="partytown">/* Partytown')
   })
 })
