@@ -19,11 +19,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "pnpm build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "prepack": "pnpm build",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
+    "prepack": "nuxt-module-build build",
     "lint": "eslint --fix --ext .js,.ts,.vue . && prettier --write '**/*.{js,ts,md,vue}'",
     "test": "vitest run"
   },
