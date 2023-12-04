@@ -24,7 +24,8 @@
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "prepack": "nuxt-module-build build",
     "lint": "eslint --fix --ext .js,.ts,.vue . && prettier --write '**/*.{js,ts,md,vue}'",
-    "test": "vitest run"
+    "test": "vitest run",
+    "release": "bumpp && npm publish"
   },
   "dependencies": {
     "@builder.io/partytown": "^0.8.0",
