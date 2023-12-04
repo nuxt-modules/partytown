@@ -22,7 +22,7 @@
     "build": "nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "pnpm build --stub && nuxi prepare playground",
+    "dev:prepare": "pnpm build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "prepack": "pnpm build",
     "lint": "eslint --fix --ext .js,.ts,.vue . && prettier --write '**/*.{js,ts,md,vue}'",
     "test": "vitest run"
