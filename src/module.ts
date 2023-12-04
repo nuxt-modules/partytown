@@ -75,15 +75,15 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt2Options.head.__dangerouslyDisableSanitizersByTagID.partytown = ['innerHTML']
       nuxt2Options.head.__dangerouslyDisableSanitizersByTagID['partytown-config'] = ['innerHTML']
       nuxt2Options.head.script.unshift(
-        { hid: 'partytown-config', innerHTML: `partytown = ${renderedConfig}` },
-        { hid: 'partytown', innerHTML: partytownSnippet }
+        { id: 'partytown-config', hid: 'partytown-config', innerHTML: `partytown = ${renderedConfig}` },
+        { id: 'partytown', hid: 'partytown', innerHTML: partytownSnippet }
       )
     } else {
       // Use @vueuse/head syntax to inject scripts
       nuxt.options.app.head.script = nuxt.options.app.head.script || []
       nuxt.options.app.head.script.unshift(
-        { innerHTML: `partytown = ${renderedConfig}` },
-        { innerHTML: partytownSnippet }
+        { id: 'partytown-config', innerHTML: `partytown = ${renderedConfig}` },
+        { id: 'partytown', innerHTML: partytownSnippet }
       )
     }
 
