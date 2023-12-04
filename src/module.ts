@@ -82,8 +82,8 @@ export default defineNuxtModule<ModuleOptions>({
       // Use @vueuse/head syntax to inject scripts
       nuxt.options.app.head.script = nuxt.options.app.head.script || []
       nuxt.options.app.head.script.unshift(
-        { id:"partytown-config", children: `partytown = ${renderedConfig}` },
-        { id:"partytown", children: partytownSnippet }
+        { id:"partytown-config", innerHTML: `partytown = ${renderedConfig}` },
+        { id:"partytown", innerHTML: partytownSnippet }
       )
     }
 

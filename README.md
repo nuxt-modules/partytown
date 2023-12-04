@@ -81,7 +81,7 @@ export default defineNuxtConfig({
     head: {
       script: [
         // Insert your CRISP Script here e.g.:
-        { children: 'window.$crisp = []; window.CRISP_WEBSITE_ID = "0000"' },
+        { innerHTML: 'window.$crisp = []; window.CRISP_WEBSITE_ID = "0000"' },
         { src: 'https://client.crisp.chat/l.js', async: true, type: 'text/partytown' },
       ],
     },
@@ -119,7 +119,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       script: [
-        { children: 'window.$plausible = [];' },
+        { innerHTML: 'window.$plausible = [];' },
         // Update this
         {
           src: 'https://plausible.io/js/script.js',
