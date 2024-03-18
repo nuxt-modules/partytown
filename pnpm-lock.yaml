@@ -13,8 +13,8 @@ importers:
   .:
     dependencies:
       '@builder.io/partytown':
-        specifier: ^0.9.0
-        version: 0.9.2
+        specifier: ^0.10.0
+        version: 0.10.0
       '@nuxt/kit':
         specifier: ^3.8.2
         version: 3.10.3(rollup@3.29.4)
@@ -413,8 +413,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@builder.io/partytown@0.9.2:
-    resolution: {integrity: sha512-aoXFGyjquwlreLeKDdliXTXWIsnIKpM3moKo7hI++N8yHbH9idSoa/GpvsFxwcPO+FnA+IrhFs0LZGGjRZiQew==}
+  /@builder.io/partytown@0.10.0:
+    resolution: {integrity: sha512-OS/o9lAmK5rZZLkjFmghPNmp3P40uTF5yu2rFY3TVlnSie7CQhwrQ+5lycUkHqrDVyI4NOnOiA655Q1eGPE2pw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dev: false
