@@ -1,4 +1,8 @@
+## [1.5.0](https://github.com/nuxt-community/partytown-module/compare/1.4.0...1.5.0) (2023-04-XX)
 
+### Features
+
+* Update `@builder.io/partytown` dependency to version `0.10.0`. This version introduces the `{preserveBehavior}` functionality, enhancing script execution control and compatibility.
 
 ## [1.3.0](https://github.com/nuxt-community/partytown-module/compare/1.2.2...1.3.0) (2022-11-30)
 
