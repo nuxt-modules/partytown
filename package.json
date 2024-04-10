@@ -44,7 +44,7 @@
     "eslint": "9.0.0",
     "nuxt": "3.11.1",
     "prettier": "3.2.5",
-    "typescript": "5.4.3",
+    "typescript": "5.4.5",
     "vitest": "1.4.0",
     "vue": "3.4.21",
     "@nuxt/eslint-config": "0.3.5"
