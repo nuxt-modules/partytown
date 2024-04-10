@@ -23,7 +23,7 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "prepack": "nuxt-module-build build",
-    "lint": "eslint --fix --ext .js,.ts,.vue . && prettier --write '**/*.{js,ts,md,vue}'",
+    "lint": "eslint --fix . && prettier --write '**/*.{js,ts,md,vue}'",
     "test": "vitest run",
     "release": "bumpp && npm publish"
   },
@@ -38,17 +38,16 @@
     "@nuxt/module-builder": "0.5.5",
     "@nuxt/schema": "3.11.1",
     "@nuxt/test-utils": "3.12.0",
-    "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@types/serve-static": "1.15.5",
     "@vitest/coverage-v8": "1.4.0",
     "bumpp": "9.4.0",
-    "eslint": "8.57.0",
-    "eslint-config-prettier": "9.1.0",
+    "eslint": "9.0.0",
     "nuxt": "3.11.1",
     "prettier": "3.2.5",
     "typescript": "5.4.3",
     "vitest": "1.4.0",
-    "vue": "3.4.21"
+    "vue": "3.4.21",
+    "@nuxt/eslint-config": "0.3.5"
   },
   "resolutions": {
     "@nuxt/schema": "3.11.1",
