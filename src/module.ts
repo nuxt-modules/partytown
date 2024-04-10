@@ -1,5 +1,5 @@
-import { join } from 'path'
-import { promises as fsp } from 'fs'
+import { join } from 'node:path'
+import { promises as fsp } from 'node:fs'
 import { genObjectFromRawEntries } from 'knitwork'
 import { defineNuxtModule, isNuxt2, isNuxt3 } from '@nuxt/kit'
 import type { PartytownConfig } from '@builder.io/partytown/integration'
@@ -54,12 +54,12 @@ export default defineNuxtModule<ModuleOptions>({
     forward: [],
     lib: '~partytown',
   }),
-  async setup (options, nuxt) {
+  async setup(options, nuxt) {
     // Normalize partytown configuration
     const fns = ['resolveUrl', 'get', 'set', 'apply']
     options.lib = withLeadingSlash(withTrailingSlash(options.lib))
     const rawConfig = Object.entries(options).map(
-      ([key, value]) => [key, fns.includes(key) ? value : JSON.stringify(value)] as [string, string]
+      ([key, value]) => [key, fns.includes(key) ? value : JSON.stringify(value)] as [string, string],
     )
     const renderedConfig = genObjectFromRawEntries(rawConfig).replace(/\s*\n\s*/g, ' ')
 
@@ -70,20 +70,21 @@ export default defineNuxtModule<ModuleOptions>({
       const nuxt2Options: any = nuxt.options
       // Use vue-meta syntax to inject scripts
       nuxt2Options.head = nuxt2Options.head || {}
-      nuxt2Options.head.__dangerouslyDisableSanitizersByTagID =
-        nuxt2Options.head.__dangerouslyDisableSanitizersByTagID || {}
+      nuxt2Options.head.__dangerouslyDisableSanitizersByTagID
+        = nuxt2Options.head.__dangerouslyDisableSanitizersByTagID || {}
       nuxt2Options.head.__dangerouslyDisableSanitizersByTagID.partytown = ['innerHTML']
       nuxt2Options.head.__dangerouslyDisableSanitizersByTagID['partytown-config'] = ['innerHTML']
       nuxt2Options.head.script.unshift(
         { id: 'partytown-config', hid: 'partytown-config', innerHTML: `partytown = ${renderedConfig}` },
-        { id: 'partytown', hid: 'partytown', innerHTML: partytownSnippet }
+        { id: 'partytown', hid: 'partytown', innerHTML: partytownSnippet },
       )
-    } else {
+    }
+    else {
       // Use @vueuse/head syntax to inject scripts
       nuxt.options.app.head.script = nuxt.options.app.head.script || []
       nuxt.options.app.head.script.unshift(
         { id: 'partytown-config', innerHTML: `partytown = ${renderedConfig}` },
-        { id: 'partytown', innerHTML: partytownSnippet }
+        { id: 'partytown', innerHTML: partytownSnippet },
       )
     }
 
@@ -105,9 +106,9 @@ export default defineNuxtModule<ModuleOptions>({
     })
 
     // @ts-expect-error TODO: use @nuxt/bridge-schema
-    nuxt.hook('render:setupMiddleware', async app => {
+    nuxt.hook('render:setupMiddleware', async (app) => {
       const serveStatic = await import('serve-static').then(
-        r => r.default || (r as unknown as typeof import('serve-static'))
+        r => r.default || (r as unknown as typeof import('serve-static')),
       )
       app.use(withoutTrailingSlash(withLeadingSlash(options.lib)), serveStatic(libDirPath()))
     })
