@@ -47,7 +47,7 @@
     "typescript": "5.4.5",
     "vitest": "1.4.0",
     "vue": "3.4.21",
-    "@nuxt/eslint-config": "0.3.12"
+    "@nuxt/eslint-config": "0.3.13"
   },
   "resolutions": {
     "@nuxt/schema": "3.11.1",
