@@ -35,7 +35,7 @@
     "ufo": "^1.5.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "0.5.2",
+    "@nuxt/eslint-config": "0.5.6",
     "@nuxt/module-builder": "0.8.3",
     "@nuxt/schema": "3.13.0",
     "@nuxt/test-utils": "3.14.1",
