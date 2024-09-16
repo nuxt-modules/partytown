@@ -40,13 +40,13 @@
     "@nuxt/schema": "3.13.0",
     "@nuxt/test-utils": "3.14.1",
     "@types/serve-static": "1.15.7",
-    "@vitest/coverage-v8": "2.0.5",
+    "@vitest/coverage-v8": "2.1.1",
     "bumpp": "9.5.2",
     "eslint": "9.10.0",
     "nuxt": "3.13.0",
     "prettier": "3.3.3",
     "typescript": "5.5.4",
-    "vitest": "2.0.5",
+    "vitest": "2.1.1",
     "vue": "3.4.38"
   },
   "resolutions": {
