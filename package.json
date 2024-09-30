@@ -35,17 +35,17 @@
     "ufo": "^1.5.4"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "0.5.6",
+    "@nuxt/eslint-config": "0.5.7",
     "@nuxt/module-builder": "0.8.3",
     "@nuxt/schema": "3.13.0",
     "@nuxt/test-utils": "3.14.1",
     "@types/serve-static": "1.15.7",
     "@vitest/coverage-v8": "2.1.1",
-    "bumpp": "9.5.2",
+    "bumpp": "9.6.1",
     "eslint": "9.10.0",
     "nuxt": "3.13.0",
     "prettier": "3.3.3",
-    "typescript": "5.5.4",
+    "typescript": "5.6.2",
     "vitest": "2.1.1",
     "vue": "3.4.38"
   },
@@ -53,5 +53,5 @@
     "@nuxt/schema": "3.13.0",
     "@nuxtjs/partytown": "link:./"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.11.0"
 }
