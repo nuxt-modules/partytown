@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - renovate/*
+      - renovate/*
   pull_request:
     branches:
       - main
