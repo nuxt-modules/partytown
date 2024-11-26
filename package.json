@@ -23,7 +23,7 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "prepack": "nuxt-module-build build",
-    "lint": "eslint --fix . && prettier --write '**/*.{js,ts,md,vue}'",
+    "lint": "eslint .",
     "test": "vitest run --coverage",
     "release": "bumpp && npm publish"
   },
@@ -44,7 +44,6 @@
     "bumpp": "9.8.1",
     "eslint": "9.15.0",
     "nuxt": "3.14.1592",
-    "prettier": "3.3.3",
     "typescript": "5.6.3",
     "vitest": "2.1.5",
     "vue": "3.5.13"

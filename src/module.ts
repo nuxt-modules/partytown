@@ -6,6 +6,7 @@ import type { PartytownConfig } from '@builder.io/partytown/integration'
 import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
 import { withLeadingSlash, withoutTrailingSlash, withTrailingSlash } from 'ufo'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ExcludeFrom<G extends Record<string, any>, K> = Pick<
   G,
   {
@@ -14,6 +15,7 @@ type ExcludeFrom<G extends Record<string, any>, K> = Pick<
 >
 
 /** For more information read the full details at https://partytown.builder.io/configuration */
+// eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 export interface ModuleOptions extends ExcludeFrom<PartytownConfig, Function> {
   /**
    * When `true`, Partytown scripts are not minified. See the
@@ -67,6 +69,7 @@ export default defineNuxtModule<ModuleOptions>({
     const partytownSnippet = await fsp.readFile(join(libDirPath(), 'partytown.js'), 'utf-8')
     if (isNuxt2()) {
       // TODO: use @nuxt/bridge-schema
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const nuxt2Options: any = nuxt.options
       // Use vue-meta syntax to inject scripts
       nuxt2Options.head = nuxt2Options.head || {}

@@ -1,7 +1,6 @@
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
-import { setup, $fetch, url } from '@nuxt/test-utils'
-import fetch from 'node-fetch'
+import { setup, $fetch } from '@nuxt/test-utils'
 
 const playground = fileURLToPath(new URL('../../playground', import.meta.url))
 

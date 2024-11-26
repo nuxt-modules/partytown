@@ -33,6 +33,9 @@ jobs:
       - name: Stub types
         run: pnpm dev:prepare
 
+      - name: Lint project
+        run: pnpm lint
+
       - name: Build project
         run: pnpm prepack
 
