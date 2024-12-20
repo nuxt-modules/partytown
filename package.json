@@ -52,5 +52,5 @@
     "@nuxt/schema": "3.14.1592",
     "@nuxtjs/partytown": "link:./"
   },
-  "packageManager": "pnpm@9.15.0"
+  "packageManager": "pnpm@9.15.1"
 }
