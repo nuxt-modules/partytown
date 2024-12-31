@@ -2,8 +2,8 @@ import { join } from 'node:path'
 import { promises as fsp } from 'node:fs'
 import { genObjectFromRawEntries } from 'knitwork'
 import { defineNuxtModule, isNuxt2, isNuxt3 } from '@nuxt/kit'
-import type { PartytownConfig } from '@builder.io/partytown/integration'
-import { copyLibFiles, libDirPath } from '@builder.io/partytown/utils'
+import type { PartytownConfig } from '@qwik.dev/partytown/integration'
+import { copyLibFiles, libDirPath } from '@qwik.dev/partytown/utils'
 import { withLeadingSlash, withoutTrailingSlash, withTrailingSlash } from 'ufo'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
