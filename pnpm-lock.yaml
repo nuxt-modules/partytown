@@ -12,12 +12,12 @@ importers:
 
   .:
     dependencies:
-      '@builder.io/partytown':
-        specifier: ^0.10.2
-        version: 0.10.2
       '@nuxt/kit':
         specifier: ^3.12.4
         version: 3.15.0(magicast@0.3.5)(rollup@3.29.5)
+      '@qwik.dev/partytown':
+        specifier: ^0.11.0
+        version: 0.11.0
       knitwork:
         specifier: ^1.1.0
         version: 1.2.0
@@ -228,11 +228,6 @@ packages:
 
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
-
-  '@builder.io/partytown@0.10.2':
-    resolution: {integrity: sha512-A9U+4PREWcS+CCYzKGIPovtGB/PBgnH/8oQyCE6Nr9drDJk6cMPpLQIEajpGPmG9tYF7N3FkRvhXm/AS9+0iKg==}
-    engines: {node: '>=18.0.0'}
-    hasBin: true
 
   '@clack/core@0.4.0':
     resolution: {integrity: sha512-YJCYBsyJfNDaTbvDUVSJ3SgSuPrcujarRgkJ5NLjexDZKvaOiVVJvAQYx8lIgG0qRT8ff0fPgqyBCVivanIZ+A==}
@@ -1144,6 +1139,11 @@ packages:
 
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
+
+  '@qwik.dev/partytown@0.11.0':
+    resolution: {integrity: sha512-MHime7cxj7KGrapGZ1VqLkXXq5BLNqvjNZndRJVvMkUWn92F2bsezlWW1lKDoFaKCKu2xv9LRUZL99RYOs+ccA==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
 
   '@redocly/ajv@8.11.2':
     resolution: {integrity: sha512-io1JpnwtIcvojV7QKDUSIuMN/ikdOUd1ReEnUnMKGfDVridQZ31J0MmIuqwuRjWDZfmvr+Q0MqCcfHM2gTivOg==}
@@ -4625,8 +4625,6 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@builder.io/partytown@0.10.2': {}
-
   '@clack/core@0.4.0':
     dependencies:
       picocolors: 1.1.1
@@ -5628,6 +5626,10 @@ snapshots:
   '@pkgr/core@0.1.1': {}
 
   '@polka/url@1.0.0-next.28': {}
+
+  '@qwik.dev/partytown@0.11.0':
+    dependencies:
+      dotenv: 16.4.7
 
   '@redocly/ajv@8.11.2':
     dependencies:
