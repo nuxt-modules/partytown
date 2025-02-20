@@ -7,14 +7,15 @@
     "url": "https://github.com/danielroe"
   },
   "exports": {
-    ".": {
-      "import": "./dist/module.mjs",
-      "require": "./dist/module.cjs"
-    }
+    ".": "./dist/module.mjs"
   },
   "type": "module",
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": ["./dist/types.d.mts"]
+    }
+  },
   "files": [
     "dist"
   ],
@@ -36,7 +37,7 @@
   },
   "devDependencies": {
     "@nuxt/eslint-config": "1.0.0",
-    "@nuxt/module-builder": "0.8.4",
+    "@nuxt/module-builder": "1.0.0-alpha.1",
     "@nuxt/schema": "3.15.4",
     "@nuxt/test-utils": "3.16.0",
     "@types/serve-static": "1.15.7",
