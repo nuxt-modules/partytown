@@ -38,8 +38,8 @@ importers:
         specifier: 3.15.4
         version: 3.15.4
       '@nuxt/test-utils':
-        specifier: 3.16.0
-        version: 3.16.0(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
+        specifier: 3.17.0
+        version: 3.17.0(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
       '@types/serve-static':
         specifier: 1.15.7
         version: 1.15.7
@@ -589,8 +589,8 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  '@nuxt/test-utils@3.16.0':
-    resolution: {integrity: sha512-ISllWsRtcPIEUJVjG2fR78Ng0fV+uBtjkeiHf7qLsYBlJRIp/UZrNyqTYJ4yyiZjk6x1kw0j3XwD5F9NE1um5g==}
+  '@nuxt/test-utils@3.17.0':
+    resolution: {integrity: sha512-NfKES2wGXxV8bNec30W0+rjegy7azFxXT7TJZ3SIcg6CxWQiO8Q+Xh743UnoqPw2WF03GNEndovf6AqwIRjNJQ==}
     engines: {node: ^18.20.5 || ^20.9.0 || ^22.0.0 || >=23.0.0}
     peerDependencies:
       '@cucumber/cucumber': ^10.3.1 || ^11.0.0
@@ -4617,7 +4617,7 @@ snapshots:
       - magicast
       - supports-color
 
-  '@nuxt/test-utils@3.16.0(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)':
+  '@nuxt/test-utils@3.17.0(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)':
     dependencies:
       '@nuxt/kit': 3.15.4(magicast@0.3.5)
       '@nuxt/schema': 3.15.4
@@ -8077,7 +8077,7 @@ snapshots:
       debug: 4.4.0(supports-color@9.4.0)
       es-module-lexer: 1.6.0
       pathe: 2.0.3
-      vite: 6.1.0(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0)
+      vite: 6.1.1(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -8173,7 +8173,7 @@ snapshots:
 
   vitest-environment-nuxt@1.0.1(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0):
     dependencies:
-      '@nuxt/test-utils': 3.16.0(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
+      '@nuxt/test-utils': 3.17.0(@types/node@22.13.4)(jiti@2.4.2)(magicast@0.3.5)(terser@5.39.0)(typescript@5.7.3)(vitest@3.0.5(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'
