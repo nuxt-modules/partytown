@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-      - renovate/*
-      - renovate/*
   pull_request:
     branches:
       - main
@@ -17,14 +15,13 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        node: [18]
 
     steps:
       - uses: actions/checkout@v5
       - run: corepack enable
       - uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: lts/-1
           cache: "pnpm"
 
       - name: 📦 Install dependencies
