@@ -40,12 +40,12 @@
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.1.2",
     "@nuxt/test-utils": "3.19.2",
-    "@types/serve-static": "1.15.8",
+    "@types/serve-static": "1.15.9",
     "@vitest/coverage-v8": "3.2.4",
-    "bumpp": "10.2.3",
+    "bumpp": "10.3.1",
     "eslint": "9.36.0",
     "nuxt": "4.1.2",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "vitest": "3.2.4",
     "vue": "3.5.22"
   },
@@ -53,5 +53,5 @@
     "@nuxt/schema": "4.1.2",
     "@nuxtjs/partytown": "link:./"
   },
-  "packageManager": "pnpm@10.17.1"
+  "packageManager": "pnpm@10.18.0"
 }
