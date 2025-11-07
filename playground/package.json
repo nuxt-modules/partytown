@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "@nuxtjs/partytown": "latest",
-    "nuxt": "4.2.0"
+    "nuxt": "4.2.1"
   }
 }
