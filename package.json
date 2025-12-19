@@ -47,7 +47,7 @@
     "nuxt": "4.2.2",
     "typescript": "5.9.3",
     "vitest": "4.0.15",
-    "vue": "3.5.25"
+    "vue": "3.5.26"
   },
   "resolutions": {
     "@nuxt/schema": "4.2.2",
