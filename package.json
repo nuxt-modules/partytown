@@ -39,7 +39,7 @@
     "@nuxt/eslint-config": "1.12.1",
     "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "4.2.2",
-    "@nuxt/test-utils": "3.21.0",
+    "@nuxt/test-utils": "3.22.0",
     "@types/serve-static": "2.2.0",
     "@vitest/coverage-v8": "4.0.16",
     "bumpp": "10.3.2",
