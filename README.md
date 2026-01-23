@@ -5,6 +5,7 @@
 [![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
+[![nuxt.care health](https://img.shields.io/endpoint?url=https://nuxt.care/api/badge/partytown)](https://nuxt.care/?search=partytown)
 
 > [Partytown](https://partytown.builder.io/) integration for [Nuxt](https://v3.nuxtjs.org)
 
