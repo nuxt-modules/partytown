@@ -145,13 +145,13 @@ export default defineNuxtConfig({
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/partytown/latest.svg
-[npm-version-href]: https://npmjs.com/package/@nuxtjs/partytown
-[npm-downloads-src]: https://img.shields.io/npm/dm/@nuxtjs/partytown.svg
+[npm-version-src]: https://npmx.dev/api/registry/badge/version/@nuxtjs/partytown
+[npm-version-href]: https://npmx.dev/package/@nuxtjs/partytown
+[npm-downloads-src]: https://npmx.dev/api/registry/badge/downloads/@nuxtjs/partytown
 [npm-downloads-href]: https://npm.chart.dev/@nuxtjs/partytown
 [github-actions-ci-src]: https://github.com/nuxt-modules/partytown/workflows/ci/badge.svg
 [github-actions-ci-href]: https://github.com/nuxt-modules/partytown/actions?query=workflow%3Aci
 [codecov-src]: https://img.shields.io/codecov/c/github/nuxt-modules/partytown.svg
 [codecov-href]: https://codecov.io/gh/nuxt-modules/partytown
-[license-src]: https://img.shields.io/npm/l/@nuxtjs/partytown.svg
-[license-href]: https://npmjs.com/package/@nuxtjs/partytown
+[license-src]: https://npmx.dev/api/registry/badge/license/@nuxtjs/partytown
+[license-href]: https://npmx.dev/package/@nuxtjs/partytown
