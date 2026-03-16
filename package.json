@@ -42,7 +42,7 @@
     "@nuxt/test-utils": "4.0.0",
     "@types/serve-static": "2.2.0",
     "@vitest/coverage-v8": "4.0.18",
-    "bumpp": "10.4.1",
+    "bumpp": "11.0.1",
     "eslint": "10.0.3",
     "nuxt": "4.4.2",
     "typescript": "5.9.3",
