@@ -43,7 +43,7 @@
     "@types/serve-static": "2.2.0",
     "@vitest/coverage-v8": "4.1.2",
     "bumpp": "11.0.1",
-    "eslint": "10.1.0",
+    "eslint": "10.2.0",
     "nuxt": "4.4.2",
     "typescript": "6.0.2",
     "vitest": "4.1.2",
