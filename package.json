@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^4.0.0",
-    "@qwik.dev/partytown": "^0.11.0",
+    "@qwik.dev/partytown": "^0.13.0",
     "knitwork": "^1.2.0",
     "serve-static": "^2.0.0",
     "ufo": "^1.5.4"
