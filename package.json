@@ -13,7 +13,9 @@
   "main": "./dist/module.mjs",
   "typesVersions": {
     "*": {
-      ".": ["./dist/types.d.mts"]
+      ".": [
+        "./dist/types.d.mts"
+      ]
     }
   },
   "files": [
@@ -48,10 +50,6 @@
     "typescript": "6.0.3",
     "vitest": "4.1.5",
     "vue": "3.5.33"
-  },
-  "resolutions": {
-    "@nuxt/schema": "4.4.2",
-    "@nuxtjs/partytown": "link:./"
   },
   "packageManager": "pnpm@10.33.2"
 }

@@ -1,3 +1,7 @@
 packages:
   - "playground"
 
+
+overrides:
+  "@nuxt/schema": "4.4.2"
+  "@nuxtjs/partytown": "link:./"
