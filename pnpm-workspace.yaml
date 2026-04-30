@@ -3,5 +3,5 @@ packages:
 
 
 overrides:
-  "@nuxt/schema": "4.4.2"
+  "@nuxt/schema": "4.4.4"
   "@nuxtjs/partytown": "link:./"
