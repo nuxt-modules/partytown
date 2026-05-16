@@ -1,7 +1,15 @@
 packages:
   - "playground"
 
+allowBuilds:
+  '@parcel/watcher': false
+  esbuild: false
+  unrs-resolver: false
 
 overrides:
   "@nuxt/schema": "4.4.5"
   "@nuxtjs/partytown": "link:./"
+
+shamefullyHoist: true
+
+strictPeerDependencies: false
