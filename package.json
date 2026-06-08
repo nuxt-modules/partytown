@@ -51,5 +51,5 @@
     "vitest": "4.1.8",
     "vue": "3.5.35"
   },
-  "packageManager": "pnpm@11.5.0"
+  "packageManager": "pnpm@11.5.2"
 }
