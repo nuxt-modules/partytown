@@ -7,7 +7,7 @@ allowBuilds:
   unrs-resolver: false
 
 overrides:
-  "@nuxt/schema": "4.5.1"
+  "@nuxt/schema": "4.5.2"
   "@nuxtjs/partytown": "link:./"
 
 shamefullyHoist: true
