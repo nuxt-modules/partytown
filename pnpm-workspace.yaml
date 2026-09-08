@@ -8,7 +8,7 @@ allowBuilds:
 
 overrides:
   "@nuxt/schema": "4.5.2"
-  "@nuxtjs/partytown": "link:./"
+  "@nuxtjs/partytown": "workspace:*"
 
 shamefullyHoist: true
 
