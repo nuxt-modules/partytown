@@ -216,7 +216,7 @@ importers:
         version: 4.5.2(magic-string@1.4.2)(magicast@0.5.4)(rolldown@1.2.4)(unplugin@3.4.0(esbuild@0.28.2)(rolldown@1.2.4)(rollup@4.62.4)(vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.50.0)(yaml@2.9.0)))
       '@qwik.dev/partytown':
         specifier: ^0.14.0
-        version: 0.14.4
+        version: 0.14.5
       knitwork:
         specifier: ^1.2.0
         version: 1.3.0
@@ -1131,8 +1131,8 @@ packages:
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
 
-  '@qwik.dev/partytown@0.14.4':
-    resolution: {integrity: sha512-XGBgDuxgG7CsAs4PZ32GUmbD029nAeCR4VGyJRJnNp3r3uVjbZt8Dkxe8cw+f8xY6Dh8VI5cb3ygEZCqSftwtA==}
+  '@qwik.dev/partytown@0.14.5':
+    resolution: {integrity: sha512-DxVGNgz2oWZvNT76LmMwxSroN1+r8rHqH/55fLGpO7tiVbYtC8PoXICyS1vGwL2mvmvfQhccqbudKrDnQO1mgg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -6070,7 +6070,7 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@qwik.dev/partytown@0.14.4': {}
+  '@qwik.dev/partytown@0.14.5': {}
 
   '@rolldown/binding-android-arm64@1.2.4':
     optional: true
