@@ -1,13 +1,18 @@
 packages:
   - "playground"
+  - "playground-v5"
 
 allowBuilds:
   '@parcel/watcher': false
   esbuild: false
   unrs-resolver: false
 
+minimumReleaseAgeExclude:
+  - '@nuxt/*'
+  - nuxt-nightly
+
 overrides:
-  "@nuxt/schema": "4.6.1"
+  "nuxt@4>@nuxt/schema": "4.6.1"
   "@nuxtjs/partytown": "workspace:*"
 
 shamefullyHoist: true

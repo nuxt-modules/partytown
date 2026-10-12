@@ -14,7 +14,7 @@
 - 👌 Zero-config required
 - 🔥 Relocates resource intensive scripts into a web worker
 - ⚡️ Speeds up your site
-- 💯 Nuxt 3 and Nuxt Bridge support
+- 💯 Nuxt 3, Nuxt 4, Nuxt 5 and Nuxt Bridge support
 
 ## Quick setup
 

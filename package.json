@@ -23,8 +23,9 @@
   ],
   "scripts": {
     "dev": "nuxt dev playground",
+    "dev:v5": "pnpm --filter partytown-module-playground-v5 dev",
     "dev:build": "nuxt build playground",
-    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt prepare playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxt prepare playground && pnpm --filter partytown-module-playground-v5 exec nuxt prepare",
     "prepack": "pnpm build",
     "build": "nuxt-module-build prepare && nuxt-module-build build",
     "lint": "eslint .",
@@ -32,7 +33,7 @@
     "release": "bumpp && npm publish"
   },
   "dependencies": {
-    "@nuxt/kit": "^4.0.0",
+    "@nuxt/kit": "^4.6.0",
     "@qwik.dev/partytown": "^0.14.0",
     "knitwork": "^1.2.0",
     "serve-static": "^2.0.0",
