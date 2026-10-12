@@ -1,0 +1,14 @@
+{
+  "name": "partytown-module-playground-v5",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxtjs/partytown": "latest",
+    "nuxt": "npm:nuxt-nightly@5x"
+  }
+}
