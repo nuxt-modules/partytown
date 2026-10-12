@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^4.6.0",
-    "@qwik.dev/partytown": "^0.14.0",
+    "@qwik.dev/partytown": "^0.15.0",
     "knitwork": "^1.2.0",
     "serve-static": "^2.0.0",
     "ufo": "^1.5.4"
@@ -61,7 +61,7 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.9.1",
+      "version": "12.11.2",
       "onFail": "download"
     }
   }
