@@ -12,7 +12,7 @@ minimumReleaseAgeExclude:
   - nuxt-nightly
 
 overrides:
-  "nuxt@4>@nuxt/schema": "4.6.1"
+  "nuxt@4>@nuxt/schema": "4.6.2"
   "@nuxtjs/partytown": "workspace:*"
 
 shamefullyHoist: true
